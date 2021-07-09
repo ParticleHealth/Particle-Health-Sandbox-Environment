@@ -1,6 +1,6 @@
 # Particle Health Sandbox
 
- This GitHub Repository is published as a part of the ONC's Synthetic Health Data Challenge.  This includes a Synthea synthetic patient population generator that outputs point-in-time CCDA files with in-document provider notes, as well as stores the original
+ This GitHub Repository is published as a part of the Synthetic Health Data Challenge.  This includes a Synthea synthetic patient population generator that outputs point-in-time CCDA files with in-document provider notes, as well as stores the original
  Synthea CCDA, FHIR, and Note files for reference.  A CSV for Validation results as well as population demographics will also be output to the resulting folder.   
 
 ## Requirements:
