@@ -33,16 +33,21 @@ if condition == 'covid19':
     module = list_of_modules[0]
 if condition == 'diabetes':
     module = list_of_modules[1]
+    if int(num_patients) < 10:
+        num_patients = '25'
 if condition == 'lung cancer':
     module = list_of_modules[2]
     num_patients = '2500'
 if condition == 'opioid addiction':
     module = list_of_modules[3]
+    if int(num_patients) < 10:
+        num_patients = '25'
+
+
 
 #run synthea with module and number of patients specified
 print('\n' + 'Running Synthea to Generate Base Synthetic Patient Data' + '\n')
 os.system('./run_synthea -p ' + num_patients + ' -m ' + module + ' -a 0-95')
-
 
 #load csv produced from synthea with conditions of population generated
 print('\n' + "Finding Patients with Conditiions of Interest"+ '\n')
@@ -86,6 +91,12 @@ if not os.path.isdir('../' + condition + '_output_' + str(today) + '/synthea_not
     os.mkdir('../' + condition + '_output_' + str(today) + '/synthea_notes')
 if not os.path.isdir('../' + condition + '_output_' + str(today) + '/generator_output'):
     os.mkdir('../' + condition + '_output_' + str(today) + '/generator_output')
+if not os.path.isdir('./Notes'):
+    os.mkdir('./Notes')
+if not os.path.isdir('./Synthea_CCDs'):
+    os.mkdir('./Synthea_CCDs')
+if not os.path.isdir('./pitd_gen_output'):
+    os.mkdir('./pitd_gen_output')
 
 #copy fhir to record folder
 for i in os.listdir('./output/fhir'):
@@ -132,7 +143,7 @@ os.remove('./output_directory.csv')
 print('\n' + 'Generation Complete' + '\n')
 
 #validate point in time ccda documents
-print('\n' + 'Validating Output Point In Time CCDA Documents' + '/n')
+print('\n' + 'Validating Output Point In Time CCDA Documents' + '\n')
 
 #loop thru output files to validate
 patients = []
