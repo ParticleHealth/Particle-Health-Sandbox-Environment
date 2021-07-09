@@ -61,7 +61,8 @@ Example:
 ## Output:
 
 A folder names with the condition specified, as well as the date of generation will be output
-Example output folder:  'diabetes_output_2021-07-07'
+
+- Example output folder:  'diabetes_output_2021-07-07'
 
 The following sub-directories and files will be contained:
 
