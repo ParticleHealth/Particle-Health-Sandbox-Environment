@@ -1,0 +1,1915 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="46f6aa9d-c38c-4215-833e-19268dadb4ca" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note"/>
+  <title>Refill Summary</title>
+  <effectiveTime xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="20210712080138"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="fe8c8041-070f-f717-dfc9-34b944493ba2" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>981 West Route Unit 84</streetAddressLine>
+        <city>Boston</city>
+        <state>Massachusetts</state>
+        <postalCode>02126</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Carma</given>
+          <family>McGlynn</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19660711080138"/>
+        <raceCode code="2054-5" displayName="black" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <time value="20210712080138"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>MEDICAL CARE OF BOSTON MANAGEMENT CORPORATION</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 CAPTAINS ROW</streetAddressLine>
+          <city>CHELSEA</city>
+          <state>MA</state>
+          <postalCode>02150-4068</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>MEDICAL CARE OF BOSTON MANAGEMENT CORPORATION</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 CAPTAINS ROW</streetAddressLine>
+          <city>CHELSEA</city>
+          <state>MA</state>
+          <postalCode>02150-4068</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19660711080138"/>
+        <high value="20210712080138"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Encounters -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <td>2021-04-12T08:01:38-04:00</td>
+                  <td>2021-04-12T08:16:38-04:00</td>
+                  <td ID="encounters-desc-31">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-31">http://snomed.info/sct 162673000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="976bd56c-3647-dd16-af5d-fba48c3e865a"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-31"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-31"/>
+              </text>
+              <effectiveTime>
+                <low value="20210412080138"/>
+                <high value="20210412081638"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Allergies: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There are no current allergies at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2000-10-09T08:01:38-04:00</td>
+                  <td>2001-10-15T08:01:38-04:00</td>
+                  <td ID="medications-desc-1">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-1">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2001-10-15T08:01:38-04:00</td>
+                  <td>2002-10-21T08:01:38-04:00</td>
+                  <td ID="medications-desc-2">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-2">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2002-10-21T08:01:38-04:00</td>
+                  <td>2003-10-27T07:01:38-05:00</td>
+                  <td ID="medications-desc-3">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-3">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2003-10-27T07:01:38-05:00</td>
+                  <td>2004-11-01T07:01:38-05:00</td>
+                  <td ID="medications-desc-4">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-4">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2004-11-01T07:01:38-05:00</td>
+                  <td>2005-11-07T07:01:38-05:00</td>
+                  <td ID="medications-desc-5">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-5">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2005-11-07T07:01:38-05:00</td>
+                  <td>2006-11-13T07:01:38-05:00</td>
+                  <td ID="medications-desc-6">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-6">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2006-11-13T07:01:38-05:00</td>
+                  <td>2007-11-19T07:01:38-05:00</td>
+                  <td ID="medications-desc-7">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-7">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2007-11-19T07:01:38-05:00</td>
+                  <td>2008-11-24T07:01:38-05:00</td>
+                  <td ID="medications-desc-8">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-8">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2008-11-24T07:01:38-05:00</td>
+                  <td>2009-11-30T07:01:38-05:00</td>
+                  <td ID="medications-desc-9">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-9">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2009-11-30T07:01:38-05:00</td>
+                  <td>2010-12-06T07:01:38-05:00</td>
+                  <td ID="medications-desc-10">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-10">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2010-12-06T07:01:38-05:00</td>
+                  <td>2011-12-12T07:01:38-05:00</td>
+                  <td ID="medications-desc-11">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-11">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2011-12-12T07:01:38-05:00</td>
+                  <td>2012-12-17T07:01:38-05:00</td>
+                  <td ID="medications-desc-12">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-12">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2012-12-17T07:01:38-05:00</td>
+                  <td>2013-12-23T07:01:38-05:00</td>
+                  <td ID="medications-desc-13">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-13">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2013-12-23T07:01:38-05:00</td>
+                  <td>2014-12-29T07:01:38-05:00</td>
+                  <td ID="medications-desc-14">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-14">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2014-12-29T07:01:38-05:00</td>
+                  <td>2016-01-04T07:01:38-05:00</td>
+                  <td ID="medications-desc-15">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-15">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2016-01-04T07:01:38-05:00</td>
+                  <td>2017-01-09T07:01:38-05:00</td>
+                  <td ID="medications-desc-16">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-16">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2017-01-09T07:01:38-05:00</td>
+                  <td>2017-11-13T07:01:38-05:00</td>
+                  <td ID="medications-desc-17">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-17">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2017-11-13T07:01:38-05:00</td>
+                  <td>2017-12-11T07:01:38-05:00</td>
+                  <td ID="medications-desc-18">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-18">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2017-12-11T07:01:38-05:00</td>
+                  <td>2018-03-12T08:01:38-04:00</td>
+                  <td ID="medications-desc-19">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-19">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2018-03-12T08:01:38-04:00</td>
+                  <td>2018-09-10T08:01:38-04:00</td>
+                  <td ID="medications-desc-20">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-20">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2018-09-10T08:01:38-04:00</td>
+                  <td>2019-09-16T08:01:38-04:00</td>
+                  <td ID="medications-desc-21">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-21">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2019-09-16T08:01:38-04:00</td>
+                  <td>2019-09-30T08:01:38-04:00</td>
+                  <td ID="medications-desc-22">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-22">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2019-09-16T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="medications-desc-23">insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]</td>
+                  <td ID="medications-code-23">http://www.nlm.nih.gov/research/umls/rxnorm 106892</td>
+                </tr>
+                <tr>
+                  <td>2019-09-30T08:01:38-04:00</td>
+                  <td>2020-02-03T07:01:38-05:00</td>
+                  <td ID="medications-desc-24">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-24">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2019-09-30T08:01:38-04:00</td>
+                  <td>2020-02-03T07:01:38-05:00</td>
+                  <td ID="medications-desc-25">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-25">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2020-02-03T07:01:38-05:00</td>
+                  <td>2020-04-27T08:01:38-04:00</td>
+                  <td ID="medications-desc-26">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-26">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2020-02-03T07:01:38-05:00</td>
+                  <td>2020-04-27T08:01:38-04:00</td>
+                  <td ID="medications-desc-27">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-27">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2020-04-27T08:01:38-04:00</td>
+                  <td>2020-09-28T08:01:38-04:00</td>
+                  <td ID="medications-desc-28">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-28">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2020-04-27T08:01:38-04:00</td>
+                  <td>2020-09-28T08:01:38-04:00</td>
+                  <td ID="medications-desc-29">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-29">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2020-09-28T08:01:38-04:00</td>
+                  <td>2020-12-28T07:01:38-05:00</td>
+                  <td ID="medications-desc-30">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-30">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2020-09-28T08:01:38-04:00</td>
+                  <td>2020-12-28T07:01:38-05:00</td>
+                  <td ID="medications-desc-31">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-31">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2020-12-28T07:01:38-05:00</td>
+                  <td>2021-03-29T08:01:38-04:00</td>
+                  <td ID="medications-desc-32">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-32">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2020-12-28T07:01:38-05:00</td>
+                  <td>2021-03-29T08:01:38-04:00</td>
+                  <td ID="medications-desc-33">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-33">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2021-03-29T08:01:38-04:00</td>
+                  <td>2021-04-12T08:01:38-04:00</td>
+                  <td ID="medications-desc-34">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-34">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2021-03-29T08:01:38-04:00</td>
+                  <td>2021-04-12T08:01:38-04:00</td>
+                  <td ID="medications-desc-35">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-35">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2021-04-12T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="medications-desc-36">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+                  <td ID="medications-code-36">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+                </tr>
+                <tr>
+                  <td>2021-04-12T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="medications-desc-37">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-37">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="16823d29-3203-ef1e-b18a-19f13a7a6b56"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20001009080138"/>
+                <high value="20011015080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-1"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="d93884cc-f8cb-8831-d387-c3a785b4f6a8"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20011015080138"/>
+                <high value="20021021080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-2"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="50c4bea0-b896-49c0-ec48-43b0023cab80"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20021021080138"/>
+                <high value="20031027070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-3"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="d9346778-276d-d261-8965-75eba948f8b7"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20031027070138"/>
+                <high value="20041101070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-4"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="d98709ad-7962-86e3-dbe0-3f44964ec24f"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20041101070138"/>
+                <high value="20051107070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-5"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="8bb121af-44c5-767f-5fbd-6fcf092902c4"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20051107070138"/>
+                <high value="20061113070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-6"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="fa4a46bf-8a9f-ce4d-cf8c-232a6519ada8"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20061113070138"/>
+                <high value="20071119070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-7"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="97ee9bf9-5e69-8ff9-3b47-432a315da76e"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20071119070138"/>
+                <high value="20081124070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-8"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="be57cd90-e9e8-7fb6-ecfa-10ba3067e685"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20081124070138"/>
+                <high value="20091130070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-9"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="88b21e5d-bb3b-7d71-29a9-d6fcd78511a8"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20091130070138"/>
+                <high value="20101206070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-10"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="91f64999-aaa5-bd4a-4085-2cb53aea2f74"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20101206070138"/>
+                <high value="20111212070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-11"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="dd593cea-26f0-933f-cf7b-67e827463b3a"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20111212070138"/>
+                <high value="20121217070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-12"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="906eee9c-4171-c62a-a165-27bffb17b316"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20121217070138"/>
+                <high value="20131223070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-13"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="acadd42f-812f-9ded-2911-18b28c847340"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20131223070138"/>
+                <high value="20141229070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-14"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="e4d4bd18-e67b-20ea-dc16-56e3458372a1"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20141229070138"/>
+                <high value="20160104070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-15"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="4a8d15c3-e0ec-34b9-b280-12c5b50d34a9"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20160104070138"/>
+                <high value="20170109070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-16"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="6dbfd6d8-8032-9615-db7c-5c094a01045f"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20170109070138"/>
+                <high value="20171113070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-17"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="b1b3a4c0-47e9-dc16-7572-36b140ba4cb9"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20171113070138"/>
+                <high value="20171211070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-18"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="e86ee365-a6cd-faa5-5781-5e831032a22d"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20171211070138"/>
+                <high value="20180312080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-19"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="8b40c23f-b590-f82b-edb0-5ca5bc425187"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20180312080138"/>
+                <high value="20180910080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-20"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="4400848f-1869-ca8b-e633-d386595a87fd"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20180910080138"/>
+                <high value="20190916080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-21"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="8dc289e6-637f-8f52-2f84-24fa10316880"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190916080138"/>
+                <high value="20190930080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-22"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="61b6dae9-64d3-932d-2aa4-d6a7ee89a254"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190916080138"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="106892" codeSystem="2.16.840.1.113883.6.88" displayName="insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]">
+                      <originalText>
+                        <reference value="#medications-desc-23"/>
+                      </originalText>
+                    </code>
+                    <name>insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="95dd3e56-197f-dc9a-3d53-58a782c45ce2"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190930080138"/>
+                <high value="20200203070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-24"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="73771a48-af47-2de2-4309-12676b858ccc"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190930080138"/>
+                <high value="20200203070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-25"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="4adfa5ba-d1ce-b246-0416-d9ccc8a00642"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200203070138"/>
+                <high value="20200427080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-26"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="5df72e4b-23a8-ca78-85de-38a187ffe093"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200203070138"/>
+                <high value="20200427080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-27"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="59d67641-59db-ac4c-088f-242d659eff07"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200427080138"/>
+                <high value="20200928080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-28"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="004b6ecf-2405-c9af-1417-0b1db9f8d2eb"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200427080138"/>
+                <high value="20200928080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-29"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="51f0d299-36ed-32d7-6958-5daccc2faaec"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200928080138"/>
+                <high value="20201228070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-30"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="06c66476-4266-67bc-c48f-f401cd6723a8"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200928080138"/>
+                <high value="20201228070138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-31"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="f547d677-d952-4cc6-7c3f-f6d73efc8d82"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20201228070138"/>
+                <high value="20210329080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-32"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="fb5c9d28-d23a-36c7-734e-2e5ab67f5bb5"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20201228070138"/>
+                <high value="20210329080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-33"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="615b3317-140c-422b-f77d-db5975d8f0ab"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210329080138"/>
+                <high value="20210412080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-34"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="99fe9093-3be9-696d-cd4b-7e9975345b8f"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210329080138"/>
+                <high value="20210412080138"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-35"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="cad4dbb3-e21a-0ecc-49b3-32866c2bdb20"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210412080138"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+                      <originalText>
+                        <reference value="#medications-desc-36"/>
+                      </originalText>
+                    </code>
+                    <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="0b9a94a2-4454-ed3e-47d0-7b1059cb39c8"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210412080138"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-37"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1991-09-16T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-1">Diabetes</td>
+                  <td ID="conditions-code-1">http://snomed.info/sct 44054006</td>
+                </tr>
+                <tr>
+                  <td>1994-09-19T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-2">Hypertriglyceridemia (disorder)</td>
+                  <td ID="conditions-code-2">http://snomed.info/sct 302870006</td>
+                </tr>
+                <tr>
+                  <td>1994-09-19T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-3">Metabolic syndrome X (disorder)</td>
+                  <td ID="conditions-code-3">http://snomed.info/sct 237602007</td>
+                </tr>
+                <tr>
+                  <td>1994-09-19T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-4">Anemia (disorder)</td>
+                  <td ID="conditions-code-4">http://snomed.info/sct 271737000</td>
+                </tr>
+                <tr>
+                  <td>2001-10-15T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-5">Hyperglycemia (disorder)</td>
+                  <td ID="conditions-code-5">http://snomed.info/sct 80394007</td>
+                </tr>
+                <tr>
+                  <td>2001-10-15T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-6">Prediabetes</td>
+                  <td ID="conditions-code-6">http://snomed.info/sct 15777000</td>
+                </tr>
+                <tr>
+                  <td>2013-12-23T07:01:38-05:00</td>
+                  <td/>
+                  <td ID="conditions-desc-7">Diabetic retinopathy associated with type II diabetes mellitus (disorder)</td>
+                  <td ID="conditions-code-7">http://snomed.info/sct 422034002</td>
+                </tr>
+                <tr>
+                  <td>2016-01-04T07:01:38-05:00</td>
+                  <td/>
+                  <td ID="conditions-desc-8">Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)</td>
+                  <td ID="conditions-code-8">http://snomed.info/sct 1551000119108</td>
+                </tr>
+                <tr>
+                  <td>2019-09-16T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-9">Chronic kidney disease stage 1 (disorder)</td>
+                  <td ID="conditions-code-9">http://snomed.info/sct 431855005</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="bf1253f2-da1c-09e1-6c30-9a829652ef34"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19910916080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="4083cd25-2491-95a7-14c7-bf8aa36bb373"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19910916080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes">
+                    <originalText>
+                      <reference value="#conditions-desc-1"/>
+                    </originalText>
+                    <translation code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes"/>
+                    <translation code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes"/>
+                    <translation code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes"/>
+                    <translation code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="15b523a1-9a50-7394-f9d3-acb8192cedae"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19940919080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="83e5dd57-556a-84c6-8a67-150456829eb6"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19940919080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-2"/>
+                    </originalText>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                    <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="72649b42-4d2b-c9c7-d7ed-678feda1dada"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19940919080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="1b16d233-bc94-25ff-648d-400f491c7c78"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19940919080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-3"/>
+                    </originalText>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="febccbd7-a3e5-666b-2c96-f9656ee4ebd6"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19940919080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="628633f2-ea7e-7f8c-bf77-468a3f261032"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19940919080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="271737000" codeSystem="2.16.840.1.113883.6.96" displayName="Anemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-4"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="ab0bb5ed-0c58-36a1-31bf-f5b47e80be17"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20011015080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="77066e8f-2306-aa17-b657-41b5528136f1"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20011015080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="80394007" codeSystem="2.16.840.1.113883.6.96" displayName="Hyperglycemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-5"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="2266360d-7066-6d40-d300-55a0d9348de4"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20011015080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="54f40647-4053-2b43-6275-e6b28aef05d8"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-6"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20011015080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes">
+                    <originalText>
+                      <reference value="#conditions-desc-6"/>
+                    </originalText>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="eebe014b-1a31-0553-067a-086fccd1bcd8"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20131223070138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="4c5edc1e-61f1-2023-cccc-9f0cc4af389c"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-7"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20131223070138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="422034002" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetic retinopathy associated with type II diabetes mellitus (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-7"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="c60ab1bb-f5cd-1499-bd2c-140d30d3a864"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20160104070138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="0267825c-417c-37c1-d29a-312de92ef006"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-8"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20160104070138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="1551000119108" codeSystem="2.16.840.1.113883.6.96" displayName="Nonproliferative diabetic retinopathy due to type 2 diabetes mellitus (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-8"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="49d7e2f7-1460-ee04-b159-458540abd04a"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20190916080138"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="4c42a10b-255b-7d99-cbb3-f8e6ce60c075"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-9"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20190916080138"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="431855005" codeSystem="2.16.840.1.113883.6.96" displayName="Chronic kidney disease stage 1 (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-9"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Vital Signs: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Social History -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1991-09-16T08:01:38-04:00</td>
+                  <td/>
+                  <td ID="careplans-desc-1">Diabetes self management plan</td>
+                  <td ID="careplans-code-1">http://snomed.info/sct 698360004</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>2021-04-12<br/><br/><br/> Medications<br/>24 hr metformin hydrochloride 500 mg extended release oral tablet; insulin lispro 100 unt/ml injectable solution [humalog]<br/><br/><br/> Plan<br/><br/>The patient was prescribed the following medications:<br/>- insulin lispro 100 unt/ml injectable solution [humalog]<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet<br/>
+                                                                </paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

@@ -1,0 +1,3540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="fe8c8041-070f-f717-dfc9-34b944493ba2" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>C-CDA R2.1 Patient Record: Carma664 McGlynn426</title>
+  <effectiveTime value="20210712080138"/>
+  <confidentialityCode code="N"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="fe8c8041-070f-f717-dfc9-34b944493ba2" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>981 West Route Unit 84</streetAddressLine>
+        <city>Boston</city>
+        <state>Massachusetts</state>
+        <postalCode>02126</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Carma664</given>
+          <family>McGlynn426</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19660711080138"/>
+        <raceCode code="2054-5" displayName="black" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20210712080138"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA" />
+      <telecom nullFlavor="NA" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>MEDICAL CARE OF BOSTON MANAGEMENT CORPORATION</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 CAPTAINS ROW</streetAddressLine>
+          <city>CHELSEA</city>
+          <state>MA</state>
+          <postalCode>02150-4068</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>MEDICAL CARE OF BOSTON MANAGEMENT CORPORATION</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 CAPTAINS ROW</streetAddressLine>
+          <city>CHELSEA</city>
+          <state>MA</state>
+          <postalCode>02150-4068</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19660711080138"/>
+        <high value="20210712080138"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+<component>
+  <!-- Allergies: patient has no allergies -->
+  <section nullFlavor="NI">
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+    <title>Allergies</title>                
+    <text>There are no current allergies at the time of this document's creation.</text>
+  </section>
+</component><component>
+  <!--Medications-->
+  <section>
+	<templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>Medications</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td>2017-12-04T07:01:38-05:00</td>
+          <td ID="medications-desc-1">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-1">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2017-12-04T07:01:38-05:00</td>
+          <td>2018-09-03T08:01:38-04:00</td>
+          <td ID="medications-desc-2">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-2">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2018-09-03T08:01:38-04:00</td>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td ID="medications-desc-3">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-3">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td ID="medications-desc-4">insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]</td>
+          <td ID="medications-code-4">http://www.nlm.nih.gov/research/umls/rxnorm 106892</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td ID="medications-desc-5">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-5">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td ID="medications-desc-6">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+          <td ID="medications-code-6">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+        </tr>
+        <tr>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td ID="medications-desc-7">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+          <td ID="medications-code-7">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+        </tr>
+        <tr>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td ID="medications-desc-8">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-8">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td ID="medications-desc-9">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+          <td ID="medications-code-9">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+        </tr>
+        <tr>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td ID="medications-desc-10">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-10">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td ID="medications-desc-11">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+          <td ID="medications-code-11">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+        </tr>
+        <tr>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td ID="medications-desc-12">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-12">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+        <tr>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td></td>
+          <td ID="medications-desc-13">Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</td>
+          <td ID="medications-code-13">http://www.nlm.nih.gov/research/umls/rxnorm 865098</td>
+        </tr>
+        <tr>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td></td>
+          <td ID="medications-desc-14">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+          <td ID="medications-code-14">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="9b01d299-334b-a089-ac0a-4304576b0732"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20171106070138"/>
+          <high value="20171204070138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-1"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="6960c437-387c-1f2d-f3f3-5193d9e7ca3b"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20171204070138"/>
+          <high value="20180903080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-2"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="4cc6beaf-8d68-4a45-1d62-1f07886d7dc1"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20180903080138"/>
+          <high value="20190923080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-3"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="e5053e19-0381-6ec7-672c-ec8f3ee9e064"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20190923080138"/>
+          <high value="20190923080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="106892" codeSystem="2.16.840.1.113883.6.88" displayName="insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]">
+          <originalText><reference value="#medications-desc-4"/></originalText>
+        </code>
+              <name>insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension [Humulin]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="c7b65b65-2a1c-84f3-652a-ec2df414b97f"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20190923080138"/>
+          <high value="20200127070138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-5"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="669755e4-f83b-5582-6635-cfe6bbe42379"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20190923080138"/>
+          <high value="20200127070138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+          <originalText><reference value="#medications-desc-6"/></originalText>
+        </code>
+              <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="f343b111-48a6-3e1f-2492-a716eb4aa75a"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200127070138"/>
+          <high value="20200420080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+          <originalText><reference value="#medications-desc-7"/></originalText>
+        </code>
+              <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="285dea88-5779-4916-f040-ae1e8d82fda1"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200127070138"/>
+          <high value="20200420080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-8"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="e57f0c55-333e-8c4b-a972-f446fb168854"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200420080138"/>
+          <high value="20200921080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+          <originalText><reference value="#medications-desc-9"/></originalText>
+        </code>
+              <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="31169f72-c6db-036c-0663-fbdd9008da57"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200420080138"/>
+          <high value="20200921080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-10"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="7df8c293-1432-596a-0100-b8a53a63e001"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200921080138"/>
+          <high value="20210405080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+          <originalText><reference value="#medications-desc-11"/></originalText>
+        </code>
+              <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="09f0691b-6cb9-5524-c8da-906cba057cec"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20200921080138"/>
+          <high value="20210405080138"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-12"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="1b880671-e475-dd65-faa6-41fcd748b30c"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20210405080138"/>
+          <high nullFlavor="UNK"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="865098" codeSystem="2.16.840.1.113883.6.88" displayName="Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]">
+          <originalText><reference value="#medications-desc-13"/></originalText>
+        </code>
+              <name>Insulin Lispro 100 UNT/ML Injectable Solution [Humalog]</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry>
+      <!--CCD Medication activity - Required-->
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+        <id root="9f9b297a-1066-c810-1287-d639cd31a702"/>
+        <statusCode code="completed"/>
+        <effectiveTime xsi:type="IVL_TS">
+          <low value="20210405080138"/>
+          <high nullFlavor="UNK"/>
+        </effectiveTime>
+        <doseQuantity value="1"/>
+        <consumable>
+          <!--CCD Product - Required-->
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+            <manufacturedMaterial>
+        <code  code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+          <originalText><reference value="#medications-desc-14"/></originalText>
+        </code>
+              <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Diagnostic Results-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+    <!--Diagnostic Results section template-->
+    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+    <title>Diagnostic Results</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="reports-desc-1">Basic Metabolic 2000 Panel</td>
+          <td ID="reports-code-1">http://loinc.org 24321-2</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="reports-desc-2">Urinalysis macro (dipstick) panel - Urine</td>
+          <td ID="reports-code-2">http://loinc.org 24357-6</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="reports-desc-3">Basic Metabolic 2000 Panel</td>
+          <td ID="reports-code-3">http://loinc.org 24321-2</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="reports-desc-4">Urinalysis macro (dipstick) panel - Urine</td>
+          <td ID="reports-code-4">http://loinc.org 24357-6</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="bf67cc5c-fa3c-e89a-5fc9-ff81766515b2"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          <high value="20171106070138"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="15fe5c8c-63f2-11b7-21a1-8b571fa90f12"/>
+        <code  code="2339-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="76.26" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="0c5bbf05-4561-fe57-bb83-ca43f0360a45"/>
+        <code  code="6299-2" codeSystem="2.16.840.1.113883.6.1" displayName="Urea Nitrogen">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="14.36" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f668d4d4-57d4-55d3-16a1-11faacfca6e7"/>
+        <code  code="38483-4" codeSystem="2.16.840.1.113883.6.1" displayName="Creatinine">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.422983964751824" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f4cf43db-76a6-3f63-ab82-bdbdd975afaa"/>
+        <code  code="49765-1" codeSystem="2.16.840.1.113883.6.1" displayName="Calcium">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="10.13" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="884b87d4-3c35-38d3-54de-510053d73221"/>
+        <code  code="2947-0" codeSystem="2.16.840.1.113883.6.1" displayName="Sodium">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="143.93" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="97208f97-2614-2476-d9a5-a04b0ce2bfdb"/>
+        <code  code="6298-4" codeSystem="2.16.840.1.113883.6.1" displayName="Potassium">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="4.81" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="54d16a98-7eae-c25a-1a76-2463422e2cb4"/>
+        <code  code="2069-3" codeSystem="2.16.840.1.113883.6.1" displayName="Chloride">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="107.58" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="bb89cab3-8c0f-08bd-6c07-dbac1e095e67"/>
+        <code  code="20565-8" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon Dioxide">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="25.24" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="cde65e2c-06bb-0fbe-f75e-5dc817390166"/>
+        <code  code="33914-3" codeSystem="2.16.840.1.113883.6.1" displayName="Glomerular filtration rate/1.73 sq M.predicted">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="126.09853464072609" unit="mL/min"/>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="a35a45f0-87d9-8457-ef85-058435e736ed"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          <high value="20171106070138"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="d17f2c20-8e35-d68a-25c9-54f42fa89054"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Appearance of Urine">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="5d71bed1-7d9c-96da-7ef4-f7db5b84eba4"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Odor of Urine">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="4a34930c-d69b-b6fc-283b-0850e5d9056d"/>
+        <code  code="32167-9" codeSystem="2.16.840.1.113883.6.1" displayName="Clarity of Urine">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="a02fb41c-0d39-a1ce-2fa2-799e93ded3d6"/>
+        <code  code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Color of Urine">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="7e836307-46f1-5e88-7bf1-cd6d4cf7fef5"/>
+        <code  code="5792-7" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="2.014226976724954" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3d48ca5b-c271-3330-99be-771e95b70a61"/>
+        <code  code="25428-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="b843aa2f-517c-7a53-a084-917b13590404"/>
+        <code  code="20505-4" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.0405066009413642" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="a0344060-a628-9ff1-a9d1-ca8e072acc35"/>
+        <code  code="5770-3" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="ce28f123-fbb8-79b8-2fd8-a9cfc5724b05"/>
+        <code  code="5797-6" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="6.104528978342147" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="6c2373bd-07d8-6e75-c66f-94865c2526d8"/>
+        <code  code="2514-8" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="c15d878c-0631-20c7-43d1-3466a03bd037"/>
+        <code  code="5811-5" codeSystem="2.16.840.1.113883.6.1" displayName="Specific gravity of Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.031011752597094" unit="{nominal}"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3ab57548-ed6d-9115-bbaa-24827608f6e5"/>
+        <code  code="5803-2" codeSystem="2.16.840.1.113883.6.1" displayName="pH of Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="5.984062873166995" unit="pH"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="118ae090-7d2c-eac1-f15a-085e7eeabc2f"/>
+        <code  code="5804-0" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="110.91407381678252" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="b0d8ad9e-5727-709d-cc0c-7162162c3688"/>
+        <code  code="20454-5" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="a1e0ff5b-ee51-3c9d-32b0-367735431a54"/>
+        <code  code="5802-4" codeSystem="2.16.840.1.113883.6.1" displayName="Nitrite [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="9b8c919c-ec3c-c6ce-bd1a-21eb0dfe9c04"/>
+        <code  code="5794-3" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="09eef3a4-1aaa-6787-350a-1997d4f9df62"/>
+        <code  code="5799-2" codeSystem="2.16.840.1.113883.6.1" displayName="Leukocyte esterase [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="8a7566e7-b451-48dd-b398-2544d8f5882d"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20190923080138"/>
+          <high value="20190923080138"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f55e6619-bfc1-7b5b-a000-f74af1e13fe8"/>
+        <code  code="2339-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="74.08" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="6a741866-3906-21f2-3a1f-db7af59744ee"/>
+        <code  code="6299-2" codeSystem="2.16.840.1.113883.6.1" displayName="Urea Nitrogen">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="18.41" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="c5e434f8-fda9-e92e-175e-303ef5d956ca"/>
+        <code  code="38483-4" codeSystem="2.16.840.1.113883.6.1" displayName="Creatinine">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.7476050414512236" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f6b41ac2-ca2f-3dab-dabe-cdfde43f93c5"/>
+        <code  code="49765-1" codeSystem="2.16.840.1.113883.6.1" displayName="Calcium">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="8.85" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="02f8207c-f330-f5c6-ea2e-00c4fabf1bbf"/>
+        <code  code="2947-0" codeSystem="2.16.840.1.113883.6.1" displayName="Sodium">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="138.54" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="72e160ec-a677-6296-4aa4-f8232b778c42"/>
+        <code  code="6298-4" codeSystem="2.16.840.1.113883.6.1" displayName="Potassium">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="3.85" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="43258768-6498-fc1d-9c39-d1536dd3a9d4"/>
+        <code  code="2069-3" codeSystem="2.16.840.1.113883.6.1" displayName="Chloride">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="108.99" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="05786098-797d-1cba-4523-9fa022faca8c"/>
+        <code  code="20565-8" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon Dioxide">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="23.02" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="2307337e-a48a-7fe2-b94c-1704f555d5e7"/>
+        <code  code="33914-3" codeSystem="2.16.840.1.113883.6.1" displayName="Glomerular filtration rate/1.73 sq M.predicted">
+          <originalText><reference value="#reports-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="120.57864206542581" unit="mL/min"/>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="356226ba-f7b2-780f-d97e-bd128fc3eddb"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20190923080138"/>
+          <high value="20190923080138"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="8e40360a-8225-0ff7-2bdf-c416ae48152c"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Appearance of Urine">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="824e7c11-5f89-8b01-1d52-f47b4cba66ff"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Odor of Urine">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="1703d458-b259-f8f4-231d-486bdd9cb3ac"/>
+        <code  code="32167-9" codeSystem="2.16.840.1.113883.6.1" displayName="Clarity of Urine">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="cb7e199a-4eb7-d0f1-eb92-1dbd54db96d8"/>
+        <code  code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Color of Urine">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="58fe843a-05fa-c7a3-6e47-22099d425ac1"/>
+        <code  code="5792-7" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="0.9667983592007476" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3ceeed16-a99a-54b4-9658-5d1f84f93cdb"/>
+        <code  code="25428-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="6cb1f883-c125-9b82-15f7-fd9be2cae79c"/>
+        <code  code="20505-4" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.3419850883773585" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="c71c6d91-4a04-ab12-381b-cbd154673594"/>
+        <code  code="5770-3" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="40963d8e-93f9-4944-e5d4-66ee7aa691bf"/>
+        <code  code="5797-6" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.862737595867292" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="b9c5ffd1-ca04-bd48-9ef8-b05f9532891e"/>
+        <code  code="2514-8" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="4591e5b8-07bb-4d50-8b92-0975382d6183"/>
+        <code  code="5811-5" codeSystem="2.16.840.1.113883.6.1" displayName="Specific gravity of Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.0346884947336557" unit="{nominal}"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f66d6aea-0665-6387-a31c-474105bbc9ad"/>
+        <code  code="5803-2" codeSystem="2.16.840.1.113883.6.1" displayName="pH of Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="5.216152611804581" unit="pH"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3c9b45e0-aed9-8e40-ea76-80c4a7f0f694"/>
+        <code  code="5804-0" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="135.46833218343937" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="537f5cab-e3f9-cf72-1790-1b4c1ecec204"/>
+        <code  code="20454-5" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="1b94c1ef-0971-ef64-44af-b91807109e70"/>
+        <code  code="5802-4" codeSystem="2.16.840.1.113883.6.1" displayName="Nitrite [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3557fe2e-79fb-c6a4-6ae7-ee3e129173ff"/>
+        <code  code="5794-3" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="efb6294a-db49-b33d-e627-dfce1f89baeb"/>
+        <code  code="5799-2" codeSystem="2.16.840.1.113883.6.1" displayName="Leukocyte esterase [Presence] in Urine by Test strip">
+          <originalText><reference value="#reports-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Problems-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <!--Problems section template-->
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+    <title>Problems</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="conditions-desc-1">Metabolic syndrome X (disorder)</td>
+          <td ID="conditions-code-1">http://snomed.info/sct 237602007</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="conditions-desc-2">Diabetes</td>
+          <td ID="conditions-code-2">http://snomed.info/sct 44054006</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="conditions-desc-3">Chronic kidney disease stage 1 (disorder)</td>
+          <td ID="conditions-code-3">http://snomed.info/sct 431855005</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="conditions-desc-4">Diabetic renal disease (disorder)</td>
+          <td ID="conditions-code-4">http://snomed.info/sct 127013003</td>
+        </tr>
+        <tr>
+          <td>2017-12-04T07:01:38-05:00</td>
+          <td></td>
+          <td ID="conditions-desc-5">Hypertriglyceridemia (disorder)</td>
+          <td ID="conditions-code-5">http://snomed.info/sct 302870006</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="conditions-desc-6">Prediabetes</td>
+          <td ID="conditions-code-6">http://snomed.info/sct 15777000</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="1695984d-0306-ad28-7b94-313661e4670b"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="5c152361-a35e-ae02-0eb6-e3e6eebe78ad"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20171106070138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)">
+          <originalText><reference value="#conditions-desc-1"/></originalText>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+              <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="b56b4825-dd79-5fff-19db-0d37c70e46a9"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="d31eac25-007c-481e-f3d3-868aa8acd5b2"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20171106070138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes">
+          <originalText><reference value="#conditions-desc-2"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="dfe5c39e-7348-df9e-2fb9-fbae75ccd0ef"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="f213a08a-117e-50af-d425-fb81bf8ff7c9"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20171106070138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="431855005" codeSystem="2.16.840.1.113883.6.96" displayName="Chronic kidney disease stage 1 (disorder)">
+          <originalText><reference value="#conditions-desc-3"/></originalText>
+              <translation code="431855005" codeSystem="2.16.840.1.113883.6.96" displayName="Chronic kidney disease stage 1 (disorder)"/>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="65542ddc-188d-ca6d-8d31-eee0da251506"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="75da5b09-4b2b-a009-419e-19bd14e5d316"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20171106070138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="127013003" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetic renal disease (disorder)">
+          <originalText><reference value="#conditions-desc-4"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="8746fbc8-cf56-a749-e5c0-0a84108d01ad"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20171204070138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="18b7601e-d0d2-8a32-f8ef-1bcb5e132091"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-5"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20171204070138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)">
+          <originalText><reference value="#conditions-desc-5"/></originalText>
+              <translation code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)"/>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="60d6e897-6689-0002-a204-ec2a4b4843b4"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="active"/>
+        <effectiveTime>
+          <low value="20190923080138"/>
+          
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="48bf1ace-1811-2163-d792-f064141fa485"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-6"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20190923080138"/>
+              
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes">
+          <originalText><reference value="#conditions-desc-6"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+  </section>
+</component>
+<component>
+  <!-- Procedures: patient has no procedures -->
+  <section nullFlavor="NI">
+    <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+    <title>Procedures</title>
+    <text>There are no current procedures at the time of this document's creation.</text>
+  </section>
+</component><component>
+  <!--Encounters-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/> <!-- CCDA Template id -->
+    <!--Encounters section template-->
+    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+    <title>Encounters</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td>2017-11-06T07:16:38-05:00</td>
+          <td ID="encounters-desc-1">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-1">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2017-12-04T07:01:38-05:00</td>
+          <td>2017-12-04T07:16:38-05:00</td>
+          <td ID="encounters-desc-2">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-2">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2018-09-03T08:01:38-04:00</td>
+          <td>2018-09-03T08:16:38-04:00</td>
+          <td ID="encounters-desc-3">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-3">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td>2019-09-23T08:16:38-04:00</td>
+          <td ID="encounters-desc-4">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-4">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td>2020-01-27T07:16:38-05:00</td>
+          <td ID="encounters-desc-5">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-5">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td>2020-04-20T08:16:38-04:00</td>
+          <td ID="encounters-desc-6">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-6">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td>2020-09-21T08:16:38-04:00</td>
+          <td ID="encounters-desc-7">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-7">http://snomed.info/sct 185349003</td>
+        </tr>
+        <tr>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td>2021-04-05T08:16:38-04:00</td>
+          <td ID="encounters-desc-8">Encounter for check up (procedure)</td>
+          <td ID="encounters-code-8">http://snomed.info/sct 185349003</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="1f25fa36-98db-4bde-c6dc-83cb3a127482"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-1"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-1"/>
+        </text>
+        <effectiveTime>
+          <low value="20171106070138"/>
+          <high value="20171106071638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="0f12a91a-8373-488d-c3b7-1ae1fb44c511"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-2"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-2"/>
+        </text>
+        <effectiveTime>
+          <low value="20171204070138"/>
+          <high value="20171204071638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="924c95e0-a831-aa14-5968-7c4352709890"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-3"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-3"/>
+        </text>
+        <effectiveTime>
+          <low value="20180903080138"/>
+          <high value="20180903081638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="b039b88e-aad0-95d1-a3b5-23c36c4870aa"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-4"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-4"/>
+        </text>
+        <effectiveTime>
+          <low value="20190923080138"/>
+          <high value="20190923081638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="9224a490-70e7-6c52-55cf-33d28843edec"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-5"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-5"/>
+        </text>
+        <effectiveTime>
+          <low value="20200127070138"/>
+          <high value="20200127071638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="862b72b7-3b94-0507-d4f8-99290ede5497"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-6"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-6"/>
+        </text>
+        <effectiveTime>
+          <low value="20200420080138"/>
+          <high value="20200420081638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="eea4c783-17cf-7138-84b1-449d9f780ab7"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-7"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-7"/>
+        </text>
+        <effectiveTime>
+          <low value="20200921080138"/>
+          <high value="20200921081638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="54d879a3-b657-7a38-ec74-9f59a1896374"/>
+        <code  code="185349003" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for check up (procedure)">
+          <originalText><reference value="#encounters-desc-8"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-8"/>
+        </text>
+        <effectiveTime>
+          <low value="20210405080138"/>
+          <high value="20210405081638"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Vital Signs-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+    <!--Vital Signs section template-->
+    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+    <title>Vital Signs</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-1">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-1">http://loinc.org 4548-4</td>
+          <td>7.05 %</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-2">Glucose</td>
+          <td ID="observations-code-2">http://loinc.org 2339-0</td>
+          <td>76.26 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-3">Urea Nitrogen</td>
+          <td ID="observations-code-3">http://loinc.org 6299-2</td>
+          <td>14.36 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-4">Creatinine</td>
+          <td ID="observations-code-4">http://loinc.org 38483-4</td>
+          <td>1.422983964751824 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-5">Calcium</td>
+          <td ID="observations-code-5">http://loinc.org 49765-1</td>
+          <td>10.13 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-6">Sodium</td>
+          <td ID="observations-code-6">http://loinc.org 2947-0</td>
+          <td>143.93 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-7">Potassium</td>
+          <td ID="observations-code-7">http://loinc.org 6298-4</td>
+          <td>4.81 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-8">Chloride</td>
+          <td ID="observations-code-8">http://loinc.org 2069-3</td>
+          <td>107.58 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-9">Carbon Dioxide</td>
+          <td ID="observations-code-9">http://loinc.org 20565-8</td>
+          <td>25.24 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-10">Glomerular filtration rate/1.73 sq M.predicted</td>
+          <td ID="observations-code-10">http://loinc.org 33914-3</td>
+          <td>126.09853464072609 mL/min</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-11">Appearance of Urine</td>
+          <td ID="observations-code-11">http://loinc.org 5767-9</td>
+          <td>system=http://snomed.info/sct, code=7766007, display=Cloudy urine (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-12">Odor of Urine</td>
+          <td ID="observations-code-12">http://loinc.org 5767-9</td>
+          <td>system=http://snomed.info/sct, code=167248002, display=Urine smell ammoniacal (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-13">Clarity of Urine</td>
+          <td ID="observations-code-13">http://loinc.org 32167-9</td>
+          <td>system=http://snomed.info/sct, code=300828005, display=Translucent (qualifier value), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-14">Color of Urine</td>
+          <td ID="observations-code-14">http://loinc.org 5778-6</td>
+          <td>system=http://snomed.info/sct, code=371254008, display=Brown color (qualifier value), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-15">Glucose [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-15">http://loinc.org 5792-7</td>
+          <td>2.014226976724954 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-16">Glucose [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-16">http://loinc.org 25428-4</td>
+          <td>system=http://snomed.info/sct, code=167265006, display=Urine glucose test = ++ (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-17">Bilirubin.total [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-17">http://loinc.org 20505-4</td>
+          <td>1.0405066009413642 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-18">Bilirubin.total [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-18">http://loinc.org 5770-3</td>
+          <td>system=http://snomed.info/sct, code=275778006, display=Finding of bilirubin in urine (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-19">Ketones [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-19">http://loinc.org 5797-6</td>
+          <td>6.104528978342147 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-20">Ketones [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-20">http://loinc.org 2514-8</td>
+          <td>system=http://snomed.info/sct, code=167288007, display=Urine ketone test = trace (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-21">Specific gravity of Urine by Test strip</td>
+          <td ID="observations-code-21">http://loinc.org 5811-5</td>
+          <td>1.031011752597094 {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-22">pH of Urine by Test strip</td>
+          <td ID="observations-code-22">http://loinc.org 5803-2</td>
+          <td>5.984062873166995 pH</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-23">Protein [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-23">http://loinc.org 5804-0</td>
+          <td>110.91407381678252 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-24">Protein [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-24">http://loinc.org 20454-5</td>
+          <td>system=http://snomed.info/sct, code=167275009, display=Urine protein test = + (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-25">Nitrite [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-25">http://loinc.org 5802-4</td>
+          <td>system=http://snomed.info/sct, code=314138001, display=Urine nitrite negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-26">Hemoglobin [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-26">http://loinc.org 5794-3</td>
+          <td>system=http://snomed.info/sct, code=167297006, display=Urine blood test = negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-27">Leukocyte esterase [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-27">http://loinc.org 5799-2</td>
+          <td>system=http://snomed.info/sct, code=394717006, display=Urine leukocyte test negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2017-12-04T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-28">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-28">http://loinc.org 4548-4</td>
+          <td>5.56 %</td>
+        </tr>
+        <tr>
+          <td>2018-09-03T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-29">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-29">http://loinc.org 4548-4</td>
+          <td>5.69 %</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-30">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-30">http://loinc.org 4548-4</td>
+          <td>5.86 %</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-31">Glucose</td>
+          <td ID="observations-code-31">http://loinc.org 2339-0</td>
+          <td>74.08 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-32">Urea Nitrogen</td>
+          <td ID="observations-code-32">http://loinc.org 6299-2</td>
+          <td>18.41 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-33">Creatinine</td>
+          <td ID="observations-code-33">http://loinc.org 38483-4</td>
+          <td>1.7476050414512236 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-34">Calcium</td>
+          <td ID="observations-code-34">http://loinc.org 49765-1</td>
+          <td>8.85 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-35">Sodium</td>
+          <td ID="observations-code-35">http://loinc.org 2947-0</td>
+          <td>138.54 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-36">Potassium</td>
+          <td ID="observations-code-36">http://loinc.org 6298-4</td>
+          <td>3.85 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-37">Chloride</td>
+          <td ID="observations-code-37">http://loinc.org 2069-3</td>
+          <td>108.99 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-38">Carbon Dioxide</td>
+          <td ID="observations-code-38">http://loinc.org 20565-8</td>
+          <td>23.02 mmol/L</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-39">Glomerular filtration rate/1.73 sq M.predicted</td>
+          <td ID="observations-code-39">http://loinc.org 33914-3</td>
+          <td>120.57864206542581 mL/min</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-40">Appearance of Urine</td>
+          <td ID="observations-code-40">http://loinc.org 5767-9</td>
+          <td>system=http://snomed.info/sct, code=7766007, display=Cloudy urine (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-41">Odor of Urine</td>
+          <td ID="observations-code-41">http://loinc.org 5767-9</td>
+          <td>system=http://snomed.info/sct, code=167248002, display=Urine smell ammoniacal (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-42">Clarity of Urine</td>
+          <td ID="observations-code-42">http://loinc.org 32167-9</td>
+          <td>system=http://snomed.info/sct, code=300828005, display=Translucent (qualifier value), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-43">Color of Urine</td>
+          <td ID="observations-code-43">http://loinc.org 5778-6</td>
+          <td>system=http://snomed.info/sct, code=371254008, display=Brown color (qualifier value), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-44">Glucose [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-44">http://loinc.org 5792-7</td>
+          <td>0.9667983592007476 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-45">Glucose [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-45">http://loinc.org 25428-4</td>
+          <td>system=http://snomed.info/sct, code=167265006, display=Urine glucose test = ++ (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-46">Bilirubin.total [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-46">http://loinc.org 20505-4</td>
+          <td>1.3419850883773585 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-47">Bilirubin.total [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-47">http://loinc.org 5770-3</td>
+          <td>system=http://snomed.info/sct, code=275778006, display=Finding of bilirubin in urine (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-48">Ketones [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-48">http://loinc.org 5797-6</td>
+          <td>1.862737595867292 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-49">Ketones [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-49">http://loinc.org 2514-8</td>
+          <td>system=http://snomed.info/sct, code=167288007, display=Urine ketone test = trace (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-50">Specific gravity of Urine by Test strip</td>
+          <td ID="observations-code-50">http://loinc.org 5811-5</td>
+          <td>1.0346884947336557 {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-51">pH of Urine by Test strip</td>
+          <td ID="observations-code-51">http://loinc.org 5803-2</td>
+          <td>5.216152611804581 pH</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-52">Protein [Mass/volume] in Urine by Test strip</td>
+          <td ID="observations-code-52">http://loinc.org 5804-0</td>
+          <td>135.46833218343937 mg/dL</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-53">Protein [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-53">http://loinc.org 20454-5</td>
+          <td>system=http://snomed.info/sct, code=167275009, display=Urine protein test = + (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-54">Nitrite [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-54">http://loinc.org 5802-4</td>
+          <td>system=http://snomed.info/sct, code=314138001, display=Urine nitrite negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-55">Hemoglobin [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-55">http://loinc.org 5794-3</td>
+          <td>system=http://snomed.info/sct, code=167297006, display=Urine blood test = negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2019-09-23T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-56">Leukocyte esterase [Presence] in Urine by Test strip</td>
+          <td ID="observations-code-56">http://loinc.org 5799-2</td>
+          <td>system=http://snomed.info/sct, code=394717006, display=Urine leukocyte test negative (finding), valueSet=null {nominal}</td>
+        </tr>
+        <tr>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td></td>
+          <td ID="observations-desc-57">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-57">http://loinc.org 4548-4</td>
+          <td>-0.08 %</td>
+        </tr>
+        <tr>
+          <td>2020-04-20T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-58">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-58">http://loinc.org 4548-4</td>
+          <td>-0.04 %</td>
+        </tr>
+        <tr>
+          <td>2020-09-21T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-59">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-59">http://loinc.org 4548-4</td>
+          <td>0.02 %</td>
+        </tr>
+        <tr>
+          <td>2021-04-05T08:01:38-04:00</td>
+          <td></td>
+          <td ID="observations-desc-60">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+          <td ID="observations-code-60">http://loinc.org 4548-4</td>
+          <td>-0.31 %</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <organizer classCode="CLUSTER" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+        <!-- Vital signs organizer template -->
+        <id root="27bd9cbe-44f5-4edb-3997-9d2cc0e64ba7"/>
+        <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+          <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime value="20210712080138"/>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="e247f46b-d27d-1424-ed0b-113fc0b7abb0"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="7.05" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="f4eb1387-5469-4d43-4adc-28ec65c89286"/>
+        <code  code="2339-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose">
+          <originalText><reference value="#observations-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="76.26" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="eb99aba6-fbb0-4ebd-8a87-30e95c127e0f"/>
+        <code  code="6299-2" codeSystem="2.16.840.1.113883.6.1" displayName="Urea Nitrogen">
+          <originalText><reference value="#observations-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="14.36" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="b8ebd0e9-05a1-30ec-61cf-08aafe5554b1"/>
+        <code  code="38483-4" codeSystem="2.16.840.1.113883.6.1" displayName="Creatinine">
+          <originalText><reference value="#observations-desc-4"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.422983964751824" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="a87f35f2-3078-f5aa-820d-e807ae3ce428"/>
+        <code  code="49765-1" codeSystem="2.16.840.1.113883.6.1" displayName="Calcium">
+          <originalText><reference value="#observations-desc-5"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-5"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="10.13" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="5a50a433-f937-d549-181a-5b1cf15ef999"/>
+        <code  code="2947-0" codeSystem="2.16.840.1.113883.6.1" displayName="Sodium">
+          <originalText><reference value="#observations-desc-6"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-6"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="143.93" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="eefe346e-8449-e6c5-8b25-9872187a66e7"/>
+        <code  code="6298-4" codeSystem="2.16.840.1.113883.6.1" displayName="Potassium">
+          <originalText><reference value="#observations-desc-7"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-7"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="4.81" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="9dd60b7a-bc15-973c-35a6-955bb4108945"/>
+        <code  code="2069-3" codeSystem="2.16.840.1.113883.6.1" displayName="Chloride">
+          <originalText><reference value="#observations-desc-8"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-8"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="107.58" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="b18d9f43-aab5-a49e-e6b7-7ca238f8250d"/>
+        <code  code="20565-8" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon Dioxide">
+          <originalText><reference value="#observations-desc-9"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-9"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="25.24" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="0bb9c814-364b-8fa0-c881-6b62c221aacf"/>
+        <code  code="33914-3" codeSystem="2.16.840.1.113883.6.1" displayName="Glomerular filtration rate/1.73 sq M.predicted">
+          <originalText><reference value="#observations-desc-10"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-10"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="126.09853464072609" unit="mL/min"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="01e02217-3cb2-b8f5-1bac-9836efb239ab"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Appearance of Urine">
+          <originalText><reference value="#observations-desc-11"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-11"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="7766007" displayName="Cloudy urine (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="9d7e831c-132b-9dc0-be89-4893301bf2e3"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Odor of Urine">
+          <originalText><reference value="#observations-desc-12"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-12"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167248002" displayName="Urine smell ammoniacal (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="faed8898-dc19-e743-0308-3870cb2f72ab"/>
+        <code  code="32167-9" codeSystem="2.16.840.1.113883.6.1" displayName="Clarity of Urine">
+          <originalText><reference value="#observations-desc-13"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-13"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="300828005" displayName="Translucent (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="edcf81f1-1f67-41dc-1edf-582f6a8b8243"/>
+        <code  code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Color of Urine">
+          <originalText><reference value="#observations-desc-14"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-14"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="371254008" displayName="Brown color (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="f50d3af7-f4c8-2f32-dfa2-04b6838d5747"/>
+        <code  code="5792-7" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-15"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-15"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="2.014226976724954" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="68766ab5-a93f-47ab-ff62-1ddf7634f445"/>
+        <code  code="25428-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-16"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-16"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167265006" displayName="Urine glucose test = ++ (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2f33ca69-9e0e-9f21-dfe1-9f12bf967e90"/>
+        <code  code="20505-4" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-17"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-17"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.0405066009413642" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="049518d1-a60e-40d4-d8b2-9e30aeaa9d53"/>
+        <code  code="5770-3" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-18"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-18"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="275778006" displayName="Finding of bilirubin in urine (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="a8a58da9-0a59-f6a1-121d-d4b45cdd35e8"/>
+        <code  code="5797-6" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-19"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-19"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="6.104528978342147" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="67958170-bfb7-cf74-e986-171291db196a"/>
+        <code  code="2514-8" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-20"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-20"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167288007" displayName="Urine ketone test = trace (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="3eb04d72-063c-18fa-8681-5e6ad9147788"/>
+        <code  code="5811-5" codeSystem="2.16.840.1.113883.6.1" displayName="Specific gravity of Urine by Test strip">
+          <originalText><reference value="#observations-desc-21"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-21"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="1.031011752597094" unit="{nominal}"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="eb81a801-73c6-c09b-f046-485aa0732a9c"/>
+        <code  code="5803-2" codeSystem="2.16.840.1.113883.6.1" displayName="pH of Urine by Test strip">
+          <originalText><reference value="#observations-desc-22"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-22"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="5.984062873166995" unit="pH"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="423e0105-4341-4fa7-1397-312f482130fb"/>
+        <code  code="5804-0" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-23"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-23"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="PQ" value="110.91407381678252" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="e7b5a2b7-1d43-f6ce-a042-4c3ebc2ce78e"/>
+        <code  code="20454-5" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-24"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-24"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167275009" displayName="Urine protein test = + (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="a1529aa7-8e3b-5cd5-f4e0-5e99779dd9a1"/>
+        <code  code="5802-4" codeSystem="2.16.840.1.113883.6.1" displayName="Nitrite [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-25"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-25"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="314138001" displayName="Urine nitrite negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="c71daf08-1990-2487-ddf1-ffdcb66639fa"/>
+        <code  code="5794-3" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-26"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-26"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167297006" displayName="Urine blood test = negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="70c6e423-9bec-5de8-4515-85687dca592d"/>
+        <code  code="5799-2" codeSystem="2.16.840.1.113883.6.1" displayName="Leukocyte esterase [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-27"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-27"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171106070138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="394717006" displayName="Urine leukocyte test negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="eb725630-37ca-56b0-fc0d-fbb4f298ad2e"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-28"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-28"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20171204070138"/>
+            <value xsi:type="PQ" value="5.56" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="1ad26b45-ca3b-7df7-27f5-d1fef7223e28"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-29"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-29"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20180903080138"/>
+            <value xsi:type="PQ" value="5.69" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="1924a1ae-498d-4f2c-e97e-1c29198c8c8c"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-30"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-30"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="5.86" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="b7367e5f-0f5d-784b-51c5-8ee1a313446b"/>
+        <code  code="2339-0" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose">
+          <originalText><reference value="#observations-desc-31"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-31"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="74.08" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2bec5fc5-fb0d-af4f-7e60-9a03db615208"/>
+        <code  code="6299-2" codeSystem="2.16.840.1.113883.6.1" displayName="Urea Nitrogen">
+          <originalText><reference value="#observations-desc-32"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-32"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="18.41" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="1a1c38c5-539a-eae4-7cde-453ce58e2ba9"/>
+        <code  code="38483-4" codeSystem="2.16.840.1.113883.6.1" displayName="Creatinine">
+          <originalText><reference value="#observations-desc-33"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-33"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.7476050414512236" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="202a77fe-0fe2-f260-dcab-b2efa7c564ad"/>
+        <code  code="49765-1" codeSystem="2.16.840.1.113883.6.1" displayName="Calcium">
+          <originalText><reference value="#observations-desc-34"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-34"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="8.85" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="f6f79f4f-9d9e-78f4-47f2-6d5cf06bdde3"/>
+        <code  code="2947-0" codeSystem="2.16.840.1.113883.6.1" displayName="Sodium">
+          <originalText><reference value="#observations-desc-35"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-35"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="138.54" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="11914fa0-c105-381e-272b-e1fe14f72718"/>
+        <code  code="6298-4" codeSystem="2.16.840.1.113883.6.1" displayName="Potassium">
+          <originalText><reference value="#observations-desc-36"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-36"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="3.85" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="0d01ccdd-cc74-bd61-e9e6-af33fce0e5f1"/>
+        <code  code="2069-3" codeSystem="2.16.840.1.113883.6.1" displayName="Chloride">
+          <originalText><reference value="#observations-desc-37"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-37"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="108.99" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="abc53e3f-3fc9-df38-a7e0-a822676955fb"/>
+        <code  code="20565-8" codeSystem="2.16.840.1.113883.6.1" displayName="Carbon Dioxide">
+          <originalText><reference value="#observations-desc-38"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-38"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="23.02" unit="mmol/L"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="b31c2ecf-15a8-0d47-2262-b2d90a793600"/>
+        <code  code="33914-3" codeSystem="2.16.840.1.113883.6.1" displayName="Glomerular filtration rate/1.73 sq M.predicted">
+          <originalText><reference value="#observations-desc-39"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-39"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="120.57864206542581" unit="mL/min"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="ade7122b-50e8-efd4-dcf9-e4b54d24b69c"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Appearance of Urine">
+          <originalText><reference value="#observations-desc-40"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-40"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="7766007" displayName="Cloudy urine (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="412ed189-2122-0a74-d07b-81060e563e0f"/>
+        <code  code="5767-9" codeSystem="2.16.840.1.113883.6.1" displayName="Odor of Urine">
+          <originalText><reference value="#observations-desc-41"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-41"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167248002" displayName="Urine smell ammoniacal (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="8e3aa4fa-89d5-5609-c9f7-bdf169411553"/>
+        <code  code="32167-9" codeSystem="2.16.840.1.113883.6.1" displayName="Clarity of Urine">
+          <originalText><reference value="#observations-desc-42"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-42"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="300828005" displayName="Translucent (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="c553bcf5-67bd-05eb-a319-73985aa95271"/>
+        <code  code="5778-6" codeSystem="2.16.840.1.113883.6.1" displayName="Color of Urine">
+          <originalText><reference value="#observations-desc-43"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-43"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="371254008" displayName="Brown color (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="ff5b800b-f9f1-ec64-58af-1978bd0f940f"/>
+        <code  code="5792-7" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-44"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-44"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="0.9667983592007476" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2b616100-6caf-3262-68fb-b6134ba4624d"/>
+        <code  code="25428-4" codeSystem="2.16.840.1.113883.6.1" displayName="Glucose [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-45"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-45"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167265006" displayName="Urine glucose test = ++ (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="14b190fb-f06d-5667-8c34-a4ce55d048d2"/>
+        <code  code="20505-4" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-46"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-46"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.3419850883773585" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="7da6121a-8539-a6c3-a07b-561bf45afe21"/>
+        <code  code="5770-3" codeSystem="2.16.840.1.113883.6.1" displayName="Bilirubin.total [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-47"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-47"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="275778006" displayName="Finding of bilirubin in urine (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="0817ee2e-1ece-ab05-c5f0-6dd9e70d2c30"/>
+        <code  code="5797-6" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-48"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-48"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.862737595867292" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2de695bc-2545-30af-096f-e3fb9b4dae3b"/>
+        <code  code="2514-8" codeSystem="2.16.840.1.113883.6.1" displayName="Ketones [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-49"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-49"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167288007" displayName="Urine ketone test = trace (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2ee7ab48-8f7c-ef28-635c-0b6922f457d5"/>
+        <code  code="5811-5" codeSystem="2.16.840.1.113883.6.1" displayName="Specific gravity of Urine by Test strip">
+          <originalText><reference value="#observations-desc-50"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-50"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="1.0346884947336557" unit="{nominal}"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="65f1bedb-12d6-f6f6-25d7-a3245399993f"/>
+        <code  code="5803-2" codeSystem="2.16.840.1.113883.6.1" displayName="pH of Urine by Test strip">
+          <originalText><reference value="#observations-desc-51"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-51"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="5.216152611804581" unit="pH"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="80d8bdb8-c6cb-602c-892d-55aab34b94fc"/>
+        <code  code="5804-0" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Mass/volume] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-52"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-52"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="PQ" value="135.46833218343937" unit="mg/dL"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="375b1a76-7586-ec20-c825-4aa2e5067aa4"/>
+        <code  code="20454-5" codeSystem="2.16.840.1.113883.6.1" displayName="Protein [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-53"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-53"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167275009" displayName="Urine protein test = + (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2f6af12c-ec54-8e61-06ef-aeb3aed73af8"/>
+        <code  code="5802-4" codeSystem="2.16.840.1.113883.6.1" displayName="Nitrite [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-54"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-54"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="314138001" displayName="Urine nitrite negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="222eac0d-7262-10e7-0855-55b1826ce936"/>
+        <code  code="5794-3" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-55"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-55"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="167297006" displayName="Urine blood test = negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="30c8ec17-09ae-478c-dc4d-dafd484e5daf"/>
+        <code  code="5799-2" codeSystem="2.16.840.1.113883.6.1" displayName="Leukocyte esterase [Presence] in Urine by Test strip">
+          <originalText><reference value="#observations-desc-56"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-56"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20190923080138"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="394717006" displayName="Urine leukocyte test negative (finding)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="d2afba25-e7e2-86bb-3b2c-e428832eed96"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-57"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-57"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200127070138"/>
+            <value xsi:type="PQ" value="-0.08" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="4d57442f-42c0-5166-0f8e-69e03d364c19"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-58"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-58"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200420080138"/>
+            <value xsi:type="PQ" value="-0.04" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2674aac9-e8e7-723d-d144-2b0771bce8b5"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-59"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-59"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200921080138"/>
+            <value xsi:type="PQ" value="0.02" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="3361a2f1-6b47-f41c-3304-ae1f3c3f5ec6"/>
+        <code  code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+          <originalText><reference value="#observations-desc-60"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-60"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20210405080138"/>
+            <value xsi:type="PQ" value="-0.31" unit="%"/>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Immunizations-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+    <!--Immunizations section template-->
+    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+    <title>Immunizations</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="immunizations-desc-1">zoster</td>
+          <td ID="immunizations-code-1">http://hl7.org/fhir/sid/cvx 121</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="immunizations-desc-2">Influenza, seasonal, injectable, preservative free</td>
+          <td ID="immunizations-code-2">http://hl7.org/fhir/sid/cvx 140</td>
+        </tr>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="immunizations-desc-3">Td (adult) preservative free</td>
+          <td ID="immunizations-code-3">http://hl7.org/fhir/sid/cvx 113</td>
+        </tr>
+        <tr>
+          <td>2020-01-27T07:01:38-05:00</td>
+          <td></td>
+          <td ID="immunizations-desc-4">Influenza, seasonal, injectable, preservative free</td>
+          <td ID="immunizations-code-4">http://hl7.org/fhir/sid/cvx 140</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="8171f005-c8d6-adc4-55be-74ed4660ca5d"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-1"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20171106070138"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="121" codeSystem="2.16.840.1.113883.12.292" displayName="zoster">
+          <originalText><reference value="#immunizations-desc-1"/></originalText>
+        </code>
+              <name>zoster</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="5097fa19-8452-54cd-2d78-465d13fd1655"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-2"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20171106070138"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+          <originalText><reference value="#immunizations-desc-2"/></originalText>
+        </code>
+              <name>Influenza, seasonal, injectable, preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="3bc6046a-e652-4bdb-1ed1-b2a292c997a8"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-3"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20171106070138"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="113" codeSystem="2.16.840.1.113883.12.292" displayName="Td (adult) preservative free">
+          <originalText><reference value="#immunizations-desc-3"/></originalText>
+        </code>
+              <name>Td (adult) preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="b54dc82f-7bb7-a00f-97c5-35a2fc1389fe"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-4"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20200127070138"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+          <originalText><reference value="#immunizations-desc-4"/></originalText>
+        </code>
+              <name>Influenza, seasonal, injectable, preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Plan of Care-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+    <!--Plan of Care section template-->
+    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+    <title>Plan of Care</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-11-06T07:01:38-05:00</td>
+          <td></td>
+          <td ID="careplans-desc-1">Diabetes self management plan</td>
+          <td ID="careplans-code-1">http://snomed.info/sct 698360004</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+  </section>
+</component>
+<component>
+  <!-- Imaging Studies: patient has no imaging studies -->
+  <section nullFlavor="NI">
+    <templateId root="2.16.840.1.113883.10.20.22.1.5"/>
+    <code code="18748-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic Imaging Report"/>
+    <title>Imaging Studies</title>
+    <text>There are no current imaging studies at the time of this document's creation.</text>
+  </section>
+</component>
+<component>
+  <!--Social History - CCDA-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+    <!-- Social history section template -->
+    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>Social History</title>
+    <text>There is no current social history at the time of this document's creation.</text>
+  </section>
+</component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
+

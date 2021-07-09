@@ -1,0 +1,250 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="46f6aa9d-c38c-4215-833e-19268dadb4ca" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note"/>
+  <title>Health Encounter Summary</title>
+  <effectiveTime xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="20210708071356"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="a881b297-7cb6-0556-effe-6532f75d7d27" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>196 Carter Highlands Suite 72</streetAddressLine>
+        <city>Medford</city>
+        <state>Massachusetts</state>
+        <postalCode>02145</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Lettie</given>
+          <family>Erdman</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19650819071356"/>
+        <raceCode code="2028-9" displayName="asian" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <time value="20210708071356"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP49548</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>170 GOVERNORS AVE</streetAddressLine>
+          <city>MEDFORD</city>
+          <state>MA</state>
+          <postalCode>02155-1643</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP49548</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>170 GOVERNORS AVE</streetAddressLine>
+          <city>MEDFORD</city>
+          <state>MA</state>
+          <postalCode>02155-1643</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19650819071356"/>
+        <high value="20210708071356"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Encounters -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <td>2007-08-30T07:13:56-04:00</td>
+                  <td>2007-08-30T07:28:56-04:00</td>
+                  <td ID="encounters-desc-1">Encounter for problem</td>
+                  <td ID="encounters-code-1">http://snomed.info/sct 185347001</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="8853bb2f-17af-d663-acfa-cacfc111b78c"/>
+              <code code="185347001" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for problem">
+                <originalText>
+                  <reference value="#encounters-desc-1"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-1"/>
+              </text>
+              <effectiveTime>
+                <low value="20070830071356"/>
+                <high value="20070830072856"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Allergies: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There are no current results at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Vital Signs: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There are no current vital signs at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--  Social History -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>2007-08-30
+<br/><br/> # Chief Complaint
+<br/> No complaints.
+<br/> 
+<br/> # History of Present Illness
+<br/> Lettie611 is a 42 year-old non-hispanic asian female.
+<br/> 
+<br/> # Social History
+<br/> Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/> 
+<br/> Patient comes from a middle socioeconomic background. Patient has completed some college courses. Patient currently has Blue Cross Blue Shield.
+<br/> 
+<br/> # Allergies
+<br/> No Known Allergies.
+<br/> 
+<br/> # Medications
+<br/> No Active Medications.
+<br/> 
+<br/> # Assessment and Plan
+<br/> 
+<br/> 
+<br/> ## Plan
+<br/> 
+<br/> The patient was prescribed the following medications:
+<br/> - ferrous sulfate 325 mg oral tablet
+<br/> 
+<br/> 
+<br/> 
+<br/>
+                                                                </paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

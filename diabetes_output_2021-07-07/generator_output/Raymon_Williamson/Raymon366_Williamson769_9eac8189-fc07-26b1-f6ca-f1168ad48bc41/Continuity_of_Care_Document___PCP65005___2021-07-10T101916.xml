@@ -1,0 +1,1510 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="9eac8189-fc07-26b1-f6ca-f1168ad48bc4" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20210710101916"/>
+  <confidentialityCode code="N"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="9eac8189-fc07-26b1-f6ca-f1168ad48bc4" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>263 Schmidt Crossing Apt 10</streetAddressLine>
+        <city>Revere</city>
+        <state>Massachusetts</state>
+        <postalCode>02151</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Raymon</given>
+          <family>Williamson</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19760501101916"/>
+        <raceCode code="2028-9" displayName="asian" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20210710101916"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP65005</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>1 ORR SQUARE C</streetAddressLine>
+          <city>REVERE</city>
+          <state>MA</state>
+          <postalCode>02151-3200</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP65005</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>1 ORR SQUARE C</streetAddressLine>
+          <city>REVERE</city>
+          <state>MA</state>
+          <postalCode>02151-3200</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19760501101916"/>
+        <high value="20210710101916"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Allergies: patient has no allergies -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>There are no current allergies at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Medications-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Medications</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td ID="medications-desc-1">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-1">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td>2019-06-01T10:19:16-04:00</td>
+                  <td ID="medications-desc-2">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-2">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2019-06-01T10:19:16-04:00</td>
+                  <td>2020-06-06T10:19:16-04:00</td>
+                  <td ID="medications-desc-3">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-3">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2020-06-06T10:19:16-04:00</td>
+                  <td>2021-06-12T10:19:16-04:00</td>
+                  <td ID="medications-desc-4">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-4">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+                <tr>
+                  <td>2021-06-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="medications-desc-5">24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</td>
+                  <td ID="medications-code-5">http://www.nlm.nih.gov/research/umls/rxnorm 860975</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="041ffa55-71a4-6e00-d342-aa1e084864b7"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20180512101916"/>
+                <high value="20180526101916"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-1"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="325f1850-2729-5aea-6f0c-e644483b8abf"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20180526101916"/>
+                <high value="20190601101916"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-2"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="76f96bfb-d6f1-32bd-4fb4-1206a159b6fc"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20190601101916"/>
+                <high value="20200606101916"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-3"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="7f8defa8-face-051c-d8eb-6ea0958936a9"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20200606101916"/>
+                <high value="20210612101916"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-4"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="f6720b04-7bf7-39df-c976-bd061d4b8eeb"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20210612101916"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="860975" codeSystem="2.16.840.1.113883.6.88" displayName="24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet">
+                      <originalText>
+                        <reference value="#medications-desc-5"/>
+                      </originalText>
+                    </code>
+                    <name>24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: patient has no results -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text>There are no current results at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Problems-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <!--Problems section template-->
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+          <title>Problems</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2013-07-20T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-1">Body mass index 30+ - obesity (finding)</td>
+                  <td ID="conditions-code-1">http://snomed.info/sct 162864005</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-2">Diabetes</td>
+                  <td ID="conditions-code-2">http://snomed.info/sct 44054006</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-3">Anemia (disorder)</td>
+                  <td ID="conditions-code-3">http://snomed.info/sct 271737000</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-4">Hyperglycemia (disorder)</td>
+                  <td ID="conditions-code-4">http://snomed.info/sct 80394007</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-5">Hypertriglyceridemia (disorder)</td>
+                  <td ID="conditions-code-5">http://snomed.info/sct 302870006</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-6">Metabolic syndrome X (disorder)</td>
+                  <td ID="conditions-code-6">http://snomed.info/sct 237602007</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-7">Prediabetes</td>
+                  <td ID="conditions-code-7">http://snomed.info/sct 15777000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="e57503a9-77d5-7815-a739-32a0c7e5657c"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20130720101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="f11162fa-8cf7-794c-33f2-8542e589cf8e"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20130720101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="162864005" codeSystem="2.16.840.1.113883.6.96" displayName="Body mass index 30+ - obesity (finding)">
+                    <originalText>
+                      <reference value="#conditions-desc-1"/>
+                    </originalText>
+                    <translation code="162864005" codeSystem="2.16.840.1.113883.6.96" displayName="Body mass index 30+ - obesity (finding)"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="a7ee6537-bd6a-4d0f-cf2c-4257f1b12ae9"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180512101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="3620c5c7-2e53-d0af-3348-e55aeba1e556"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180512101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes">
+                    <originalText>
+                      <reference value="#conditions-desc-2"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="82bb7cd3-e556-5f46-64c9-618abab3d640"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180512101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="3e36421e-7730-fdf8-baf5-12de793d0e97"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180512101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="271737000" codeSystem="2.16.840.1.113883.6.96" displayName="Anemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-3"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="ea38e90f-487f-887c-9b5b-4a3606a142f7"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180526101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="f4b7ea0c-2db2-a1da-4564-e8d26ceb3409"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180526101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="80394007" codeSystem="2.16.840.1.113883.6.96" displayName="Hyperglycemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-4"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="c23fad0d-8a8f-6d75-039f-bf05fae9b929"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180526101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="eb116971-7803-544c-5cd4-a22dd7405149"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180526101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="302870006" codeSystem="2.16.840.1.113883.6.96" displayName="Hypertriglyceridemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-5"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="058daf0b-6118-5a7c-ba94-6ddfcd755e14"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180526101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="7b95ec80-299a-c909-2cf7-64601a066d55"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-6"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180526101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-6"/>
+                    </originalText>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                    <translation code="237602007" codeSystem="2.16.840.1.113883.6.96" displayName="Metabolic syndrome X (disorder)"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="094f86d4-82c9-2fdd-ef0d-a257982d349a"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20180526101916"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="67485642-1074-040f-7c36-99c861862314"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-7"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20180526101916"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes">
+                    <originalText>
+                      <reference value="#conditions-desc-7"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: patient has no procedures -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>There are no current procedures at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Encounters-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <!-- CCDA Template id -->
+          <!--Encounters section template-->
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2013-07-20T10:19:16-04:00</td>
+                  <td>2013-07-20T10:34:16-04:00</td>
+                  <td ID="encounters-desc-1">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-1">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2016-05-07T10:19:16-04:00</td>
+                  <td>2016-05-07T10:34:16-04:00</td>
+                  <td ID="encounters-desc-2">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-2">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td>2018-05-12T10:34:16-04:00</td>
+                  <td ID="encounters-desc-3">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-3">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td>2018-05-26T10:34:16-04:00</td>
+                  <td ID="encounters-desc-4">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-4">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2019-06-01T10:19:16-04:00</td>
+                  <td>2019-06-01T10:34:16-04:00</td>
+                  <td ID="encounters-desc-5">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-5">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2020-06-06T10:19:16-04:00</td>
+                  <td>2020-06-06T10:34:16-04:00</td>
+                  <td ID="encounters-desc-6">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-6">http://snomed.info/sct 162673000</td>
+                </tr>
+                <tr>
+                  <td>2021-06-12T10:19:16-04:00</td>
+                  <td>2021-06-12T10:34:16-04:00</td>
+                  <td ID="encounters-desc-7">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-7">http://snomed.info/sct 162673000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="21a59c4b-6b82-5e69-ff80-c83b4773adc1"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-1"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-1"/>
+              </text>
+              <effectiveTime>
+                <low value="20130720101916"/>
+                <high value="20130720103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="e703c710-aa25-9e24-ba92-1c398e27b9cc"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-2"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-2"/>
+              </text>
+              <effectiveTime>
+                <low value="20160507101916"/>
+                <high value="20160507103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="6d3e95e4-aa5d-f3f5-74ac-be049beec933"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-3"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-3"/>
+              </text>
+              <effectiveTime>
+                <low value="20180512101916"/>
+                <high value="20180512103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="fdbe731c-f50e-194c-cb6b-2f806aeecdaa"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-4"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-4"/>
+              </text>
+              <effectiveTime>
+                <low value="20180526101916"/>
+                <high value="20180526103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="7761172b-3efc-b7da-4909-f76b2245c5bf"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-5"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-5"/>
+              </text>
+              <effectiveTime>
+                <low value="20190601101916"/>
+                <high value="20190601103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="16e0c8e9-a606-4554-cec4-4bd65b92883e"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-6"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-6"/>
+              </text>
+              <effectiveTime>
+                <low value="20200606101916"/>
+                <high value="20200606103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="30fecf3b-23aa-5777-402c-6fd2f5b461d6"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-7"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-7"/>
+              </text>
+              <effectiveTime>
+                <low value="20210612101916"/>
+                <high value="20210612103416"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Vital Signs-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <!--Vital Signs section template-->
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-1">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-1">http://loinc.org 4548-4</td>
+                  <td>7.54 %</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-2">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-2">http://loinc.org 4548-4</td>
+                  <td>6.04 %</td>
+                </tr>
+                <tr>
+                  <td>2019-06-01T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-3">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-3">http://loinc.org 4548-4</td>
+                  <td>5.42 %</td>
+                </tr>
+                <tr>
+                  <td>2020-06-06T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-4">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-4">http://loinc.org 4548-4</td>
+                  <td>5.4 %</td>
+                </tr>
+                <tr>
+                  <td>2021-06-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-5">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-5">http://loinc.org 4548-4</td>
+                  <td>5.4 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <!-- Vital signs organizer template -->
+              <id root="a0eae7cf-e74b-b44b-75bf-b86b833468fc"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+                <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210710101916"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="7aaad746-822a-a2aa-8c81-6cd71c95ac0e"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20180512101916"/>
+                  <value xsi:type="PQ" value="7.54" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="61e26679-e995-3f03-5d66-f5e7c2f79dbc"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-2"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20180526101916"/>
+                  <value xsi:type="PQ" value="6.04" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="1a8d6115-3941-d85b-a513-10c6504863a3"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-3"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190601101916"/>
+                  <value xsi:type="PQ" value="5.42" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="b8426967-fc83-9994-8204-f8e0d5faeb3a"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-4"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20200606101916"/>
+                  <value xsi:type="PQ" value="5.4" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="82aeb57d-494a-02f2-f83b-bd230c0ee8f1"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-5"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20210612101916"/>
+                  <value xsi:type="PQ" value="5.4" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Immunizations-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+          <!--Immunizations section template-->
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>Immunizations</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2013-07-20T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-1">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-1">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2016-05-07T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-2">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-2">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2016-05-07T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-3">Hep A, adult</td>
+                  <td ID="immunizations-code-3">http://hl7.org/fhir/sid/cvx 52</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-4">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-4">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-5">Td (adult) preservative free</td>
+                  <td ID="immunizations-code-5">http://hl7.org/fhir/sid/cvx 113</td>
+                </tr>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-6">Hep A, adult</td>
+                  <td ID="immunizations-code-6">http://hl7.org/fhir/sid/cvx 52</td>
+                </tr>
+                <tr>
+                  <td>2018-05-26T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-7">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-7">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2019-06-01T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-8">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-8">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2020-06-06T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-9">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-9">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2021-06-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-10">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-10">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="d868096c-97df-f7da-1c9d-34653e772596"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20130720101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-1"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="3d3382ef-7667-64dc-1b73-4523d0ccbdfb"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-2"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20160507101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-2"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="5bb50a30-bb5a-c1f2-2349-7473ae0438d6"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-3"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20160507101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="52" codeSystem="2.16.840.1.113883.12.292" displayName="Hep A, adult">
+                      <originalText>
+                        <reference value="#immunizations-desc-3"/>
+                      </originalText>
+                    </code>
+                    <name>Hep A, adult</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="2d647be9-ef2d-f509-339f-f033a5c396e7"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-4"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20180512101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-4"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="23e2e0b0-4ebc-58c1-3488-88821146c160"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-5"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20180512101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="113" codeSystem="2.16.840.1.113883.12.292" displayName="Td (adult) preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-5"/>
+                      </originalText>
+                    </code>
+                    <name>Td (adult) preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="159b4586-0ec9-eb71-9495-4c7100b1fa80"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-6"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20180512101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="52" codeSystem="2.16.840.1.113883.12.292" displayName="Hep A, adult">
+                      <originalText>
+                        <reference value="#immunizations-desc-6"/>
+                      </originalText>
+                    </code>
+                    <name>Hep A, adult</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="aa4009b8-b8b9-ea6d-ecc7-bdf96d883480"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-7"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20180526101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-7"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="fb6eb5eb-61fd-5d8a-01aa-d12e69f572b3"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-8"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190601101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-8"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="4fd1b06e-b6e0-56e2-84b1-2ab54cfb98e8"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-9"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20200606101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-9"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="14b862d7-ee84-ead4-8c94-517363924d12"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-10"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210612101916"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-10"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <!--Plan of Care section template-->
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018-05-12T10:19:16-04:00</td>
+                  <td/>
+                  <td ID="careplans-desc-1">Diabetes self management plan</td>
+                  <td ID="careplans-code-1">http://snomed.info/sct 698360004</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <!--Social History - CCDA-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <!-- Social history section template -->
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text>There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>2021-06-12
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 45 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/># Assessment and Plan
+<br/><br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/>The patient was prescribed the following medications:
+<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/><br/><br/>2020-06-06
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 44 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/># Assessment and Plan
+<br/><br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/>The patient was prescribed the following medications:
+<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/><br/><br/>2019-06-01
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 43 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/># Assessment and Plan
+<br/><br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/>The patient was prescribed the following medications:
+<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/><br/><br/>2018-05-26
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 42 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/># Assessment and Plan
+<br/>Patient is presenting with hyperglycemia (disorder), hypertriglyceridemia (disorder), metabolic syndrome x (disorder), prediabetes. 
+<br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/>The patient was prescribed the following medications:
+<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/><br/><br/><br/>2018-05-12
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 42 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>No Active Medications.
+<br/><br/># Assessment and Plan
+<br/>Patient is presenting with diabetes, anemia (disorder). 
+<br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free, td (adult) preservative free, hep a, adult. 
+<br/>The patient was prescribed the following medications:
+<br/>- 24 hr metformin hydrochloride 500 mg extended release oral tablet
+<br/>The patient was placed on a careplan:
+<br/>- diabetes self management plan
+<br/><br/><br/><br/>2016-05-07
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 40 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>No Active Medications.
+<br/><br/># Assessment and Plan
+<br/><br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free, hep a, adult. 
+<br/><br/><br/><br/>2013-07-20
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Raymon366 is a 37 year-old non-hispanic asian male.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Cigna Health.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>No Active Medications.
+<br/><br/># Assessment and Plan
+<br/>Patient is presenting with body mass index 30+ - obesity (finding). 
+<br/><br/>## Plan
+<br/>Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/><br/><br/></paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

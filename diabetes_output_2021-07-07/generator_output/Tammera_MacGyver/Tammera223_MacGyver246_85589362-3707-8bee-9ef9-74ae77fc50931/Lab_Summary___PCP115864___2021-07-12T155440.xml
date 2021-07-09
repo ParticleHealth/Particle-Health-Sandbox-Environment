@@ -1,0 +1,482 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="46f6aa9d-c38c-4215-833e-19268dadb4ca" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note"/>
+  <title>Lab Summary</title>
+  <effectiveTime xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="20210712155440"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="85589362-3707-8bee-9ef9-74ae77fc5093" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>407 Jakubowski Well</streetAddressLine>
+        <city>Marlborough</city>
+        <state>Massachusetts</state>
+        <postalCode>01752</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Tammera</given>
+          <family>MacGyver</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19730813155440"/>
+        <raceCode code="2106-3" displayName="white" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <time value="20210712155440"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP115864</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>16 WINTER ST</streetAddressLine>
+          <city>SOUTHBOROUGH</city>
+          <state>MA</state>
+          <postalCode>01745-1029</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP115864</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>16 WINTER ST</streetAddressLine>
+          <city>SOUTHBOROUGH</city>
+          <state>MA</state>
+          <postalCode>01745-1029</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19730813155440"/>
+        <high value="20210712155440"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Encounters -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <td>2019-09-02T15:54:40-04:00</td>
+                  <td>2019-09-02T16:09:40-04:00</td>
+                  <td ID="encounters-desc-7">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-7">http://snomed.info/sct 162673000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="e0670e21-a563-5de4-6d61-36fc091ab52e"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-7"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-7"/>
+              </text>
+              <effectiveTime>
+                <low value="20190902155440"/>
+                <high value="20190902160940"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Allergies: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There are no current results at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1990-10-01T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-1">Body mass index 30+ - obesity (finding)</td>
+                  <td ID="conditions-code-1">http://snomed.info/sct 162864005</td>
+                </tr>
+                <tr>
+                  <td>1995-10-16T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-2">Prediabetes</td>
+                  <td ID="conditions-code-2">http://snomed.info/sct 15777000</td>
+                </tr>
+                <tr>
+                  <td>2004-10-25T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="conditions-desc-3">Anemia (disorder)</td>
+                  <td ID="conditions-code-3">http://snomed.info/sct 271737000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="8d021735-c456-d9bd-ac11-374c701ea66e"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19901001155440"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="7c2c4a6c-b61e-ddf5-41ab-8f1946cf9eaa"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19901001155440"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="162864005" codeSystem="2.16.840.1.113883.6.96" displayName="Body mass index 30+ - obesity (finding)">
+                    <originalText>
+                      <reference value="#conditions-desc-1"/>
+                    </originalText>
+                    <translation code="162864005" codeSystem="2.16.840.1.113883.6.96" displayName="Body mass index 30+ - obesity (finding)"/>
+                    <translation code="162864005" codeSystem="2.16.840.1.113883.6.96" displayName="Body mass index 30+ - obesity (finding)"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="adae9742-e777-07af-dc7a-3266cd24d1e1"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="19951016155440"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="51be48ab-7849-9fa1-dfc7-eca9b9309c03"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="19951016155440"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes">
+                    <originalText>
+                      <reference value="#conditions-desc-2"/>
+                    </originalText>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                    <translation code="15777000" codeSystem="2.16.840.1.113883.6.96" displayName="Prediabetes"/>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="1a18c5e0-7745-490e-b765-cbd109d01642"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20041025155440"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="2a7daa60-931c-d37d-102f-21f06b8921e8"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20041025155440"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="271737000" codeSystem="2.16.840.1.113883.6.96" displayName="Anemia (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-3"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Vital Signs: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2013-08-19T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-1">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-1">http://loinc.org 4548-4</td>
+                  <td>6 %</td>
+                </tr>
+                <tr>
+                  <td>2015-08-24T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-2">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-2">http://loinc.org 4548-4</td>
+                  <td>5.98 %</td>
+                </tr>
+                <tr>
+                  <td>2017-08-28T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-3">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-3">http://loinc.org 4548-4</td>
+                  <td>6 %</td>
+                </tr>
+                <tr>
+                  <td>2019-09-02T15:54:40-04:00</td>
+                  <td/>
+                  <td ID="observations-desc-4">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-4">http://loinc.org 4548-4</td>
+                  <td>6.09 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <!-- Vital signs organizer template -->
+              <id root="e2eb5835-4eed-4ede-d329-a2e89601075a"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+                <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210712155440"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="17b04c25-160f-622d-e56d-f6edeacc6f94"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130819155440"/>
+                  <value xsi:type="PQ" value="6" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="7991bc20-d57e-76a3-d92e-c3b15c241282"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-2"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20150824155440"/>
+                  <value xsi:type="PQ" value="5.98" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="a6aeef4e-6766-a892-1541-1c8437b6467f"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-3"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20170828155440"/>
+                  <value xsi:type="PQ" value="6" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="80c394c8-5550-6282-61c8-6c0daf537569"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-4"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190902155440"/>
+                  <value xsi:type="PQ" value="6.09" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--  Social History -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

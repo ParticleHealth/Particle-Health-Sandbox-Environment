@@ -1,0 +1,393 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="46f6aa9d-c38c-4215-833e-19268dadb4ca" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note"/>
+  <title>Health Encounter Summary</title>
+  <effectiveTime xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="20210710093501"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="65b28705-fc53-5d7f-eea7-9d588854cd8d" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>958 Schuppe Byway</streetAddressLine>
+        <city>Northampton</city>
+        <state>Massachusetts</state>
+        <postalCode>01027</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Prince</given>
+          <family>Bartell</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19721216083501"/>
+        <raceCode code="2054-5" displayName="black" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <time value="20210710093501"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP99786</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>51 UNION ST</streetAddressLine>
+          <city>EASTHAMPTON</city>
+          <state>MA</state>
+          <postalCode>01027-1446</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP99786</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>51 UNION ST</streetAddressLine>
+          <city>EASTHAMPTON</city>
+          <state>MA</state>
+          <postalCode>01027-1446</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19721216083501"/>
+        <high value="20210710093501"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Encounters -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <td>2021-01-23T08:35:01-05:00</td>
+                  <td>2021-01-23T08:50:01-05:00</td>
+                  <td ID="encounters-desc-7">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-7">http://snomed.info/sct 162673000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="17eebefe-adb7-7ea4-428f-96e7ff0b2427"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-7"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-7"/>
+              </text>
+              <effectiveTime>
+                <low value="20210123083501"/>
+                <high value="20210123085001"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Allergies: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There are no current results at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Vital Signs: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016-12-31T08:35:01-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-1">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-1">http://loinc.org 4548-4</td>
+                  <td>5.84 %</td>
+                </tr>
+                <tr>
+                  <td>2017-01-14T08:35:01-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-2">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-2">http://loinc.org 4548-4</td>
+                  <td>5.82 %</td>
+                </tr>
+                <tr>
+                  <td>2019-01-19T08:35:01-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-3">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-3">http://loinc.org 4548-4</td>
+                  <td>5.88 %</td>
+                </tr>
+                <tr>
+                  <td>2021-01-23T08:35:01-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-4">Hemoglobin A1c/Hemoglobin.total in Blood</td>
+                  <td ID="observations-code-4">http://loinc.org 4548-4</td>
+                  <td>5.89 %</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <!-- Vital signs organizer template -->
+              <id root="c2e17c37-a83b-1a23-38d5-b086345e154f"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+                <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210710093501"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="0fc4669a-9de7-12b9-6858-43d76bd58a7e"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20161231083501"/>
+                  <value xsi:type="PQ" value="5.84" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="1ab04be3-4241-ad0e-995a-91a12ef1cfa4"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-2"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20170114083501"/>
+                  <value xsi:type="PQ" value="5.82" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="8e4c0674-af6c-ee17-3c39-895ccf0feb3c"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-3"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190119083501"/>
+                  <value xsi:type="PQ" value="5.88" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="77b1f97c-7594-ce63-26e5-1bf6571df3c0"/>
+                  <code code="4548-4" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin A1c/Hemoglobin.total in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-4"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20210123083501"/>
+                  <value xsi:type="PQ" value="5.89" unit="%"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--  Social History -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2016-12-31T08:35:01-05:00</td>
+                  <td/>
+                  <td ID="careplans-desc-1">Diabetes self management plan</td>
+                  <td ID="careplans-code-1">http://snomed.info/sct 698360004</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>2021-01-23
+<br/><br/> # Chief Complaint
+<br/> No complaints.
+<br/> 
+<br/> # History of Present Illness
+<br/> Prince887 is a 48 year-old non-hispanic black male.
+<br/> 
+<br/> # Social History
+<br/> Patient is single. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/> 
+<br/> Patient comes from a middle socioeconomic background. Patient has completed some college courses. Patient currently has Blue Cross Blue Shield.
+<br/> 
+<br/> # Allergies
+<br/> No Known Allergies.
+<br/> 
+<br/> # Medications
+<br/> No Active Medications.
+<br/> 
+<br/> # Assessment and Plan
+<br/> 
+<br/> 
+<br/> ## Plan
+<br/> Patient was given the following immunizations: influenza, seasonal, injectable, preservative free. 
+<br/> 
+<br/> 
+<br/> 
+<br/><br/>
+                                                                </paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

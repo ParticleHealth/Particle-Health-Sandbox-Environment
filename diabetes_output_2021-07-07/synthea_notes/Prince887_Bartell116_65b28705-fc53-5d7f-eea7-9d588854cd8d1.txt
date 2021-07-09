@@ -1,0 +1,37 @@
+
+2016-12-31
+
+# Chief Complaint
+No complaints.
+
+# History of Present Illness
+Prince887 is a 44 year-old non-hispanic black male.
+
+# Social History
+Patient is single. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+
+Patient comes from a middle socioeconomic background. Patient has completed some college courses. Patient currently has Blue Cross Blue Shield.
+
+# Allergies
+No Known Allergies.
+
+# Medications
+No Active Medications.
+
+# Assessment and Plan
+
+
+## Plan
+
+The following procedures were conducted:
+- peripheral blood smear interpretation
+- peripheral blood smear interpretation
+- review of systems (procedure)
+- review of systems (procedure)
+- medication reconciliation (procedure)
+- medication reconciliation (procedure)
+- brief general examination (procedure)
+- brief general examination (procedure)
+
+
+

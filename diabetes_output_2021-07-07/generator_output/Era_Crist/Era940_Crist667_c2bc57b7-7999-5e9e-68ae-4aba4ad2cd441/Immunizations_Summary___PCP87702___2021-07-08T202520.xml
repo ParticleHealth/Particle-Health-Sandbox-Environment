@@ -1,0 +1,691 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="46f6aa9d-c38c-4215-833e-19268dadb4ca" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="11506-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Subsequent evaluation note"/>
+  <title>Immunization Summary</title>
+  <effectiveTime xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="20210708202520"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="c2bc57b7-7999-5e9e-68ae-4aba4ad2cd44" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>483 Goldner Lock</streetAddressLine>
+        <city>Newton</city>
+        <state>Massachusetts</state>
+        <postalCode>02465</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Era</given>
+          <family>Crist</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19480701202520"/>
+        <raceCode code="2106-3" displayName="white" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <time value="20210708202520"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP87702</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>85 MAIN ST</streetAddressLine>
+          <city>WATERTOWN</city>
+          <state>MA</state>
+          <postalCode>02472-4411</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP87702</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>85 MAIN ST</streetAddressLine>
+          <city>WATERTOWN</city>
+          <state>MA</state>
+          <postalCode>02472-4411</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19480701202520"/>
+        <high value="20210708202520"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Encounters -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <td>2020-11-05T19:25:20-05:00</td>
+                  <td>2020-11-05T19:40:20-05:00</td>
+                  <td ID="encounters-desc-11">General examination of patient (procedure)</td>
+                  <td ID="encounters-code-11">http://snomed.info/sct 162673000</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="1fbffb9b-c2b2-6676-1e7d-4c82e71ce3ac"/>
+              <code code="162673000" codeSystem="2.16.840.1.113883.6.96" displayName="General examination of patient (procedure)">
+                <originalText>
+                  <reference value="#encounters-desc-11"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-11"/>
+              </text>
+              <effectiveTime>
+                <low value="20201105192520"/>
+                <high value="20201105194020"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Allergies: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Vital Signs: -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text>Data Unknown</text>
+        </section>
+      </component>
+      <component>
+        <!--  Social History -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Plan of Care-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+          <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+          <title>Plan of Care</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1988-07-07T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="careplans-desc-1">Diabetes self management plan</td>
+                  <td ID="careplans-code-1">http://snomed.info/sct 698360004</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <!--Immunizations-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+          <title>Immunizations</title>
+          <text xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2011-09-15T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-1">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-1">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2012-09-20T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-2">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-2">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2013-09-26T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-3">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-3">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2013-09-26T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-4">Pneumococcal conjugate PCV 13</td>
+                  <td ID="immunizations-code-4">http://hl7.org/fhir/sid/cvx 133</td>
+                </tr>
+                <tr>
+                  <td>2014-10-02T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-5">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-5">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2014-10-02T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-6">pneumococcal polysaccharide vaccine, 23 valent</td>
+                  <td ID="immunizations-code-6">http://hl7.org/fhir/sid/cvx 33</td>
+                </tr>
+                <tr>
+                  <td>2015-10-08T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-7">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-7">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2016-10-13T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-8">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-8">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2017-10-19T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-9">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-9">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2018-10-25T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-10">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-10">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2019-10-31T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-11">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-11">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+                <tr>
+                  <td>2019-10-31T20:25:20-04:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-12">Td (adult) preservative free</td>
+                  <td ID="immunizations-code-12">http://hl7.org/fhir/sid/cvx 113</td>
+                </tr>
+                <tr>
+                  <td>2020-11-05T19:25:20-05:00</td>
+                  <td/>
+                  <td ID="immunizations-desc-13">Influenza, seasonal, injectable, preservative free</td>
+                  <td ID="immunizations-code-13">http://hl7.org/fhir/sid/cvx 140</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="4ae555e1-31aa-6e47-d29b-6c10e9f062eb"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110915202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-1"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="19841ef9-1a3a-48c6-c8c8-d4c6bd50c44d"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-2"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20120920202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-2"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="ebb7f715-9587-b288-34a0-12371c3c946a"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-3"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20130926202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-3"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="a4348fd8-e73d-aeb4-a254-ccd4cf1136a2"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-4"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20130926202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="133" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal conjugate PCV 13">
+                      <originalText>
+                        <reference value="#immunizations-desc-4"/>
+                      </originalText>
+                    </code>
+                    <name>Pneumococcal conjugate PCV 13</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="a19a0326-6e01-43bc-a79b-fc587af03979"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-5"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20141002202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-5"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="37e28df3-0074-7f9d-1a79-d0ad4fa6be77"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-6"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20141002202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="33" codeSystem="2.16.840.1.113883.12.292" displayName="pneumococcal polysaccharide vaccine, 23 valent">
+                      <originalText>
+                        <reference value="#immunizations-desc-6"/>
+                      </originalText>
+                    </code>
+                    <name>pneumococcal polysaccharide vaccine, 23 valent</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="2170a461-90ae-fc65-9450-b62e4ac8fc4f"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-7"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20151008202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-7"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="f9e1b311-e31b-a8f5-9d5f-e912fc013f43"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-8"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20161013202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-8"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="e23b21b1-9e63-da08-ccd3-4c286ca40bc6"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-9"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20171019202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-9"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="594c6ad6-5e0b-e773-5d6d-76bfa9914762"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-10"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20181025202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-10"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="a57a5d0c-b0e5-d9ae-f9f0-2de87c848bdb"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-11"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20191031202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-11"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="c3d4d931-bbc2-eb92-15f6-bcdf8f750895"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-12"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20191031202520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="113" codeSystem="2.16.840.1.113883.12.292" displayName="Td (adult) preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-12"/>
+                      </originalText>
+                    </code>
+                    <name>Td (adult) preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" typeCode="DRIV">
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+              <!-- Medication activity template -->
+              <id root="1c99a202-5014-e464-fb38-e0c593c79632"/>
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+              <text>
+                <reference value="#immunizations-desc-13"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20201105192520"/>
+              <doseQuantity nullFlavor="UNK"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                  <!-- Product template -->
+                  <manufacturedMaterial>
+                    <code code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+                      <originalText>
+                        <reference value="#immunizations-desc-13"/>
+                      </originalText>
+                    </code>
+                    <name>Influenza, seasonal, injectable, preservative free</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

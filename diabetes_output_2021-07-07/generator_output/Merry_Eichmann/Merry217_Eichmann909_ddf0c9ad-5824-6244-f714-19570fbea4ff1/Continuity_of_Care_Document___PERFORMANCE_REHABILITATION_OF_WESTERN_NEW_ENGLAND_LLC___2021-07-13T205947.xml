@@ -1,0 +1,1012 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="ddf0c9ad-5824-6244-f714-19570fbea4ff" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20210713205947"/>
+  <confidentialityCode code="N"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="ddf0c9ad-5824-6244-f714-19570fbea4ff" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>590 Borer Mission</streetAddressLine>
+        <city>Springfield</city>
+        <state>Massachusetts</state>
+        <postalCode>01118</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Merry</given>
+          <family>Eichmann</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19851105195947"/>
+        <raceCode code="2054-5" displayName="black" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20210713205947"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PERFORMANCE REHABILITATION OF WESTERN NEW ENGLAND LLC</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>591 MEMORIAL DR</streetAddressLine>
+          <city>CHICOPEE</city>
+          <state>MA</state>
+          <postalCode>01020-5034</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PERFORMANCE REHABILITATION OF WESTERN NEW ENGLAND LLC</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>591 MEMORIAL DR</streetAddressLine>
+          <city>CHICOPEE</city>
+          <state>MA</state>
+          <postalCode>01020-5034</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19851105195947"/>
+        <high value="20210713205947"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Allergies: patient has no allergies -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>There are no current allergies at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Medications: patient has no medications -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medications</title>
+          <text>There are no current medications at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Diagnostic Results-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <!--Diagnostic Results section template-->
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="reports-desc-1">Complete blood count (hemogram) panel - Blood by Automated count</td>
+                  <td ID="reports-code-1">http://loinc.org 58410-2</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+              <!--Result organizer template -->
+              <id root="bb87710f-d61d-4ca6-fa14-73de04bcc7f0"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20190129195947"/>
+                <high value="20190129195947"/>
+              </effectiveTime>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="80b62700-edaa-4c95-10ec-171b4c1f0c91"/>
+                  <code code="718-7" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Mass/volume] in Blood">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="11.21520179387712" unit="g/dL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="76be27be-9d62-9e97-2c06-f3f57eb67149"/>
+                  <code code="20570-8" codeSystem="2.16.840.1.113883.6.1" displayName="Hematocrit [Volume Fraction] of Blood">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="33.8513088280942" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="bd5649fc-96d4-728e-16a7-b207cab6e57e"/>
+                  <code code="6690-2" codeSystem="2.16.840.1.113883.6.1" displayName="WBC Auto (Bld) [#/Vol]">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="9.514913315491654" unit="10*3/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="bcdedbc7-0e16-78b9-04d4-34fd5a0cb826"/>
+                  <code code="789-8" codeSystem="2.16.840.1.113883.6.1" displayName="RBC Auto (Bld) [#/Vol]">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="4.198739514458886" unit="10*6/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="007c5b7c-a112-406c-4505-a7302b1077a1"/>
+                  <code code="787-2" codeSystem="2.16.840.1.113883.6.1" displayName="MCV [Entitic volume] by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="81.82945096703017" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="45363d1e-3f89-4e03-70fc-0a9338f87ac2"/>
+                  <code code="785-6" codeSystem="2.16.840.1.113883.6.1" displayName="MCH [Entitic mass] by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="29.867026449686847" unit="pg"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="69e63fc9-a881-1c14-11bf-73d128b1672e"/>
+                  <code code="786-4" codeSystem="2.16.840.1.113883.6.1" displayName="MCHC [Mass/volume] by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="35.628679038201405" unit="g/dL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="3d891781-33d1-7be3-ded7-53b63f8848e9"/>
+                  <code code="21000-5" codeSystem="2.16.840.1.113883.6.1" displayName="RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="39.246388232679095" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="6b496f2f-8a54-091a-8e62-72ccbca60f2d"/>
+                  <code code="777-3" codeSystem="2.16.840.1.113883.6.1" displayName="Platelets [#/volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="342.9246801437787" unit="10*3/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="71aa86ee-0bea-a4b9-0940-83499e05827e"/>
+                  <code code="32207-3" codeSystem="2.16.840.1.113883.6.1" displayName="Platelet distribution width [Entitic volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="444.3505506440416" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                  <id root="acc7f281-8b7e-2b4a-5e28-6d29928a07fa"/>
+                  <code code="32623-1" codeSystem="2.16.840.1.113883.6.1" displayName="Platelet mean volume [Entitic volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#reports-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#reports-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="12.203362738545035" unit="fL"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Problems-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <!--Problems section template-->
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+          <title>Problems</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019-02-05T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="conditions-desc-1">Neuropathy due to type 2 diabetes mellitus (disorder)</td>
+                  <td ID="conditions-code-1">http://snomed.info/sct 368581000119106</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+              <!-- Problem act template -->
+              <id root="c6f43c27-cd75-da59-fe94-b8981e6ec5f5"/>
+              <code nullFlavor="NA"/>
+              <statusCode code="active"/>
+              <effectiveTime>
+                <low value="20190205195947"/>
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                  <!--Problem observation template - NOT episode template-->
+                  <id root="27586f93-983b-1923-4b21-ba925aaafdc5"/>
+                  <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+                    <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  </code>
+                  <text>
+                    <reference value="#conditions-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20190205195947"/>
+                  </effectiveTime>
+                  <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis"/>
+                  <value xsi:type="CD" code="368581000119106" codeSystem="2.16.840.1.113883.6.96" displayName="Neuropathy due to type 2 diabetes mellitus (disorder)">
+                    <originalText>
+                      <reference value="#conditions-desc-1"/>
+                    </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Surgeries-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <!--Surgeries section template-->
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="List of surgeries"/>
+          <title>Surgeries</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td>2019-01-29T20:29:47-05:00</td>
+                  <td ID="procedures-desc-1">Peripheral blood smear interpretation</td>
+                  <td ID="procedures-code-1">http://snomed.info/sct 14768001</td>
+                </tr>
+                <tr>
+                  <td>2019-02-05T19:59:47-05:00</td>
+                  <td>2019-02-05T20:14:47-05:00</td>
+                  <td ID="procedures-desc-2">Peripheral blood smear interpretation</td>
+                  <td ID="procedures-code-2">http://snomed.info/sct 14768001</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T20:29:47-05:00</td>
+                  <td>2019-01-29T20:39:47-05:00</td>
+                  <td ID="procedures-desc-3">Review of systems (procedure)</td>
+                  <td ID="procedures-code-3">http://snomed.info/sct 415300000</td>
+                </tr>
+                <tr>
+                  <td>2019-02-05T19:59:47-05:00</td>
+                  <td>2019-02-05T20:14:47-05:00</td>
+                  <td ID="procedures-desc-4">Review of systems (procedure)</td>
+                  <td ID="procedures-code-4">http://snomed.info/sct 415300000</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T20:39:47-05:00</td>
+                  <td>2019-01-29T20:48:47-05:00</td>
+                  <td ID="procedures-desc-5">Medication Reconciliation (procedure)</td>
+                  <td ID="procedures-code-5">http://snomed.info/sct 430193006</td>
+                </tr>
+                <tr>
+                  <td>2019-02-05T19:59:47-05:00</td>
+                  <td>2019-02-05T20:14:47-05:00</td>
+                  <td ID="procedures-desc-6">Medication Reconciliation (procedure)</td>
+                  <td ID="procedures-code-6">http://snomed.info/sct 430193006</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T20:48:47-05:00</td>
+                  <td>2019-01-29T21:01:47-05:00</td>
+                  <td ID="procedures-desc-7">Brief general examination (procedure)</td>
+                  <td ID="procedures-code-7">http://snomed.info/sct 162676008</td>
+                </tr>
+                <tr>
+                  <td>2019-02-05T19:59:47-05:00</td>
+                  <td>2019-02-05T20:14:47-05:00</td>
+                  <td ID="procedures-desc-8">Brief general examination (procedure)</td>
+                  <td ID="procedures-code-8">http://snomed.info/sct 162676008</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="3fd2d136-df64-988d-c08f-67cbe461aed9"/>
+              <code code="14768001" codeSystem="2.16.840.1.113883.6.96" displayName="Peripheral blood smear interpretation">
+                <originalText>
+                  <reference value="#procedures-desc-1"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-1"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190129195947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="7a7345bf-8c5e-fe57-dd52-f1d3843fd710"/>
+              <code code="14768001" codeSystem="2.16.840.1.113883.6.96" displayName="Peripheral blood smear interpretation">
+                <originalText>
+                  <reference value="#procedures-desc-2"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-2"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190205195947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="4fd82de5-0218-8f91-27c2-9276600de447"/>
+              <code code="415300000" codeSystem="2.16.840.1.113883.6.96" displayName="Review of systems (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-3"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-3"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190129202947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="1a96ba61-c798-8e4d-48a8-29608fee2b34"/>
+              <code code="415300000" codeSystem="2.16.840.1.113883.6.96" displayName="Review of systems (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-4"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-4"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190205195947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="2505fc40-cec2-3e95-8bad-900a2e0b7772"/>
+              <code code="430193006" codeSystem="2.16.840.1.113883.6.96" displayName="Medication Reconciliation (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-5"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-5"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190129203947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="5674355b-cc0e-c69f-00df-c7d0381808dc"/>
+              <code code="430193006" codeSystem="2.16.840.1.113883.6.96" displayName="Medication Reconciliation (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-6"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-6"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190205195947"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="af422d1f-b908-5e3f-0eb4-66603f2e921d"/>
+              <code code="162676008" codeSystem="2.16.840.1.113883.6.96" displayName="Brief general examination (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-7"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-7"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190129204847"/>
+            </procedure>
+          </entry>
+          <entry typeCode="DRIV">
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <!-- Procedure activity template -->
+              <id root="58d88d93-4904-819c-44ce-e45a21ac0c87"/>
+              <code code="162676008" codeSystem="2.16.840.1.113883.6.96" displayName="Brief general examination (procedure)">
+                <originalText>
+                  <reference value="#procedures-desc-8"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#procedures-desc-8"/>
+              </text>
+              <statusCode code="completed"/>
+              <effectiveTime value="20190205195947"/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Encounters-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <!-- CCDA Template id -->
+          <!--Encounters section template-->
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td>2019-01-29T20:14:47-05:00</td>
+                  <td ID="encounters-desc-1">Encounter for problem</td>
+                  <td ID="encounters-code-1">http://snomed.info/sct 185347001</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="9b278c97-2542-1b26-5379-b2342cb27524"/>
+              <code code="185347001" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for problem">
+                <originalText>
+                  <reference value="#encounters-desc-1"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-1"/>
+              </text>
+              <effectiveTime>
+                <low value="20190129195947"/>
+                <high value="20190129201447"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Vital Signs-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <!--Vital Signs section template-->
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-1">Hemoglobin [Mass/volume] in Blood</td>
+                  <td ID="observations-code-1">http://loinc.org 718-7</td>
+                  <td>11.21520179387712 g/dL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-2">Hematocrit [Volume Fraction] of Blood</td>
+                  <td ID="observations-code-2">http://loinc.org 20570-8</td>
+                  <td>33.8513088280942 %</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-3">WBC Auto (Bld) [#/Vol]</td>
+                  <td ID="observations-code-3">http://loinc.org 6690-2</td>
+                  <td>9.514913315491654 10*3/uL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-4">RBC Auto (Bld) [#/Vol]</td>
+                  <td ID="observations-code-4">http://loinc.org 789-8</td>
+                  <td>4.198739514458886 10*6/uL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-5">MCV [Entitic volume] by Automated count</td>
+                  <td ID="observations-code-5">http://loinc.org 787-2</td>
+                  <td>81.82945096703017 fL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-6">MCH [Entitic mass] by Automated count</td>
+                  <td ID="observations-code-6">http://loinc.org 785-6</td>
+                  <td>29.867026449686847 pg</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-7">MCHC [Mass/volume] by Automated count</td>
+                  <td ID="observations-code-7">http://loinc.org 786-4</td>
+                  <td>35.628679038201405 g/dL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-8">RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]</td>
+                  <td ID="observations-code-8">http://loinc.org 21000-5</td>
+                  <td>39.246388232679095 fL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-9">Platelets [#/volume] in Blood by Automated count</td>
+                  <td ID="observations-code-9">http://loinc.org 777-3</td>
+                  <td>342.9246801437787 10*3/uL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-10">Platelet distribution width [Entitic volume] in Blood by Automated count</td>
+                  <td ID="observations-code-10">http://loinc.org 32207-3</td>
+                  <td>444.3505506440416 fL</td>
+                </tr>
+                <tr>
+                  <td>2019-01-29T19:59:47-05:00</td>
+                  <td/>
+                  <td ID="observations-desc-11">Platelet mean volume [Entitic volume] in Blood by Automated count</td>
+                  <td ID="observations-code-11">http://loinc.org 32623-1</td>
+                  <td>12.203362738545035 fL</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+              <!-- Vital signs organizer template -->
+              <id root="3da1656e-be6b-d8c7-fca1-375da571c70a"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+                <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              </code>
+              <statusCode code="completed"/>
+              <effectiveTime value="20210713205947"/>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="29a46682-64ce-2058-cf5d-1fa70e55c6f3"/>
+                  <code code="718-7" codeSystem="2.16.840.1.113883.6.1" displayName="Hemoglobin [Mass/volume] in Blood">
+                    <originalText>
+                      <reference value="#observations-desc-1"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-1"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="11.21520179387712" unit="g/dL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="0851975e-d993-5756-58f6-9add870c740c"/>
+                  <code code="20570-8" codeSystem="2.16.840.1.113883.6.1" displayName="Hematocrit [Volume Fraction] of Blood">
+                    <originalText>
+                      <reference value="#observations-desc-2"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-2"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="33.8513088280942" unit="%"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="ca193b01-5150-71d5-e420-72bb8142320d"/>
+                  <code code="6690-2" codeSystem="2.16.840.1.113883.6.1" displayName="WBC Auto (Bld) [#/Vol]">
+                    <originalText>
+                      <reference value="#observations-desc-3"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-3"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="9.514913315491654" unit="10*3/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="cb16b252-c656-fcb4-bb00-1b011c2e0089"/>
+                  <code code="789-8" codeSystem="2.16.840.1.113883.6.1" displayName="RBC Auto (Bld) [#/Vol]">
+                    <originalText>
+                      <reference value="#observations-desc-4"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-4"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="4.198739514458886" unit="10*6/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="a0e982f5-cee1-1711-68f5-1fdbcfd95386"/>
+                  <code code="787-2" codeSystem="2.16.840.1.113883.6.1" displayName="MCV [Entitic volume] by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-5"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-5"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="81.82945096703017" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="9551863f-f37f-0eff-8ffe-968f7bb46150"/>
+                  <code code="785-6" codeSystem="2.16.840.1.113883.6.1" displayName="MCH [Entitic mass] by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-6"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-6"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="29.867026449686847" unit="pg"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="b0b08487-b475-9576-5174-745253c0f98a"/>
+                  <code code="786-4" codeSystem="2.16.840.1.113883.6.1" displayName="MCHC [Mass/volume] by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-7"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-7"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="35.628679038201405" unit="g/dL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="d0f3c0a0-3436-bd8a-f4c4-ef77c9ab3985"/>
+                  <code code="21000-5" codeSystem="2.16.840.1.113883.6.1" displayName="RDW - Erythrocyte distribution width Auto (RBC) [Entitic vol]">
+                    <originalText>
+                      <reference value="#observations-desc-8"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-8"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="39.246388232679095" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="308c37a2-790f-3ae0-af44-4ed03cc8b1d4"/>
+                  <code code="777-3" codeSystem="2.16.840.1.113883.6.1" displayName="Platelets [#/volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-9"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-9"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="342.9246801437787" unit="10*3/uL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="8e4498ee-bbc4-935d-281f-cb4c9a6bd11f"/>
+                  <code code="32207-3" codeSystem="2.16.840.1.113883.6.1" displayName="Platelet distribution width [Entitic volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-10"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-10"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="444.3505506440416" unit="fL"/>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                  <!-- Result observation template -->
+                  <id root="b6303a73-8b78-381f-616a-67e8e082a837"/>
+                  <code code="32623-1" codeSystem="2.16.840.1.113883.6.1" displayName="Platelet mean volume [Entitic volume] in Blood by Automated count">
+                    <originalText>
+                      <reference value="#observations-desc-11"/>
+                    </originalText>
+                  </code>
+                  <text>
+                    <reference value="#observations-desc-11"/>
+                  </text>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20190129195947"/>
+                  <value xsi:type="PQ" value="12.203362738545035" unit="fL"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Social History - CCDA-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <!-- Social history section template -->
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text>There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>2019-01-29
+<br/><br/># Chief Complaint
+<br/>- Tingling in Hands and Feet
+<br/><br/><br/># History of Present Illness
+<br/>Merry217 is a 33 year-old non-hispanic black female.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient has completed some college courses. Patient currently has Medicaid.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>No Active Medications.
+<br/><br/># Assessment and Plan
+<br/>Patient is presenting with neuropathy due to type 2 diabetes mellitus (disorder). 
+<br/><br/>## Plan
+<br/><br/>The following procedures were conducted:
+<br/>- peripheral blood smear interpretation
+<br/>- peripheral blood smear interpretation
+<br/>- review of systems (procedure)
+<br/>- review of systems (procedure)
+<br/>- medication reconciliation (procedure)
+<br/>- medication reconciliation (procedure)
+<br/>- brief general examination (procedure)
+<br/>- brief general examination (procedure)
+<br/><br/><br/></paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

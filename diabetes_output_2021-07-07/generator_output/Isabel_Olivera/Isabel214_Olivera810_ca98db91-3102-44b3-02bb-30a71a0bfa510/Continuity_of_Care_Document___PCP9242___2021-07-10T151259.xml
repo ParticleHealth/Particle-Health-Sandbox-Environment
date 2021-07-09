@@ -1,0 +1,276 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="ca98db91-3102-44b3-02bb-30a71a0bfa51" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Continuity of Care Document</title>
+  <effectiveTime value="20210710151259"/>
+  <confidentialityCode code="N"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="ca98db91-3102-44b3-02bb-30a71a0bfa51" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>521 Franecki Rest</streetAddressLine>
+        <city>Agawam</city>
+        <state>Massachusetts</state>
+        <postalCode>01001</postalCode>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Isabel</given>
+          <family>Olivera</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="19380521151259"/>
+        <raceCode code="2106-3" displayName="white" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20210710151259"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA"/>
+      <telecom nullFlavor="NA"/>
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP9242</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 PARK AVE</streetAddressLine>
+          <city>WEST SPRINGFIELD</city>
+          <state>MA</state>
+          <postalCode>01089-3366</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>PCP9242</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>201 PARK AVE</streetAddressLine>
+          <city>WEST SPRINGFIELD</city>
+          <state>MA</state>
+          <postalCode>01089-3366</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19380521151259"/>
+        <high value="20210710151259"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+      <component>
+        <!-- Allergies: patient has no allergies -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+          <title>Allergies</title>
+          <text>There are no current allergies at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Medications-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Medications</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1980-05-31T16:37:59-04:00</td>
+                  <td/>
+                  <td ID="medications-desc-1">Vitamin B 12 5 MG/ML Injectable Solution</td>
+                  <td ID="medications-code-1">http://www.nlm.nih.gov/research/umls/rxnorm 2001499</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <!--CCD Medication activity - Required-->
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09"/>
+              <id root="f91c8f83-f8c7-95d8-184a-b47455316faf"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="19800531163759"/>
+                <high nullFlavor="UNK"/>
+              </effectiveTime>
+              <doseQuantity value="1"/>
+              <consumable>
+                <!--CCD Product - Required-->
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                  <manufacturedMaterial>
+                    <code code="2001499" codeSystem="2.16.840.1.113883.6.88" displayName="Vitamin B 12 5 MG/ML Injectable Solution">
+                      <originalText>
+                        <reference value="#medications-desc-1"/>
+                      </originalText>
+                    </code>
+                    <name>Vitamin B 12 5 MG/ML Injectable Solution</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!-- Diagnostic Results: patient has no results -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+          <title>Diagnostic Results</title>
+          <text>There are no current results at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Conditions: patient has no conditions -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+          <title>Problems</title>
+          <text>There are no current problem concern acts at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!-- Procedures: patient has no procedures -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+          <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedures"/>
+          <title>Procedures</title>
+          <text>There are no current procedures at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Encounters-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+          <!-- CCDA Template id -->
+          <!--Encounters section template-->
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text>
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th>Start</th>
+                  <th>Stop</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1980-05-31T15:12:59-04:00</td>
+                  <td>1980-05-31T15:27:59-04:00</td>
+                  <td ID="encounters-desc-1">Encounter for problem</td>
+                  <td ID="encounters-code-1">http://snomed.info/sct 185347001</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+              <!-- Encounter activity template -->
+              <id root="880745aa-52b7-ad5a-8d13-486cbe2cf245"/>
+              <code code="185347001" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for problem">
+                <originalText>
+                  <reference value="#encounters-desc-1"/>
+                </originalText>
+              </code>
+              <text>
+                <reference value="#encounters-desc-1"/>
+              </text>
+              <effectiveTime>
+                <low value="19800531151259"/>
+                <high value="19800531152759"/>
+              </effectiveTime>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <!--Vital Signs: Patient has no current vital signs -->
+        <section nullFlavor="NI">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+          <!--Vital Signs section template-->
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>Vital Signs</title>
+          <text>There are no current vital signs at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <!--Social History - CCDA-->
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+          <!-- Social history section template -->
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text>There is no current social history at the time of this document's creation.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code="34109-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note"/>
+          <title>Miscellaneous Notes</title>
+          <text>
+            <list styleCode="TOC">
+              <item>
+                <paragraph><br/>1980-05-31
+<br/><br/># Chief Complaint
+<br/>No complaints.
+<br/><br/># History of Present Illness
+<br/>Isabel214 is a 42 year-old non-hispanic white female.
+<br/><br/># Social History
+<br/>Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+<br/><br/>Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has NO INSURANCE.
+<br/><br/># Allergies
+<br/>No Known Allergies.
+<br/><br/># Medications
+<br/>No Active Medications.
+<br/><br/># Assessment and Plan
+<br/><br/><br/>## Plan
+<br/><br/>The patient was prescribed the following medications:
+<br/>- vitamin b 12 5 mg/ml injectable solution
+<br/><br/><br/></paragraph>
+              </item>
+            </list>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

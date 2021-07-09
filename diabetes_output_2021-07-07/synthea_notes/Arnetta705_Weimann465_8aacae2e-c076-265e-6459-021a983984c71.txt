@@ -1,0 +1,37 @@
+
+2012-12-12
+
+# Chief Complaint
+No complaints.
+
+# History of Present Illness
+Arnetta705 is a 46 year-old non-hispanic white female.
+
+# Social History
+Patient is married. Patient is an active smoker and is an alcoholic. Patient identifies as heterosexual.
+
+Patient comes from a middle socioeconomic background. Patient did not finish high school. Patient currently has Medicaid.
+
+# Allergies
+No Known Allergies.
+
+# Medications
+No Active Medications.
+
+# Assessment and Plan
+
+
+## Plan
+
+The following procedures were conducted:
+- peripheral blood smear interpretation
+- peripheral blood smear interpretation
+- review of systems (procedure)
+- review of systems (procedure)
+- medication reconciliation (procedure)
+- medication reconciliation (procedure)
+- brief general examination (procedure)
+- brief general examination (procedure)
+
+
+
